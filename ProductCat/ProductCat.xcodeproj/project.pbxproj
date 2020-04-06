@@ -10,6 +10,10 @@
 		BD0BF5F3243B7BB4000C7C7F /* ProductCat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0BF5E9243B7BB4000C7C7F /* ProductCat.framework */; };
 		BD0BF5F8243B7BB4000C7C7F /* ProductCatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0BF5F7243B7BB4000C7C7F /* ProductCatTests.swift */; };
 		BD0BF5FA243B7BB4000C7C7F /* ProductCat.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0BF5EC243B7BB4000C7C7F /* ProductCat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD0BF644243B8502000C7C7F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0BF643243B8502000C7C7F /* UIColorExtension.swift */; };
+		BD0BF646243B8548000C7C7F /* UIColorExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0BF645243B8548000C7C7F /* UIColorExtensionTests.swift */; };
+		BD73FBA6243B89DA00AE9D81 /* UidHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FBA5243B89DA00AE9D81 /* UidHelper.swift */; };
+		BDF9B998243B872B0018FBDA /* SettingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF9B997243B872B0018FBDA /* SettingHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		BD0BF5F2243B7BB4000C7C7F /* ProductCatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductCatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0BF5F7243B7BB4000C7C7F /* ProductCatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCatTests.swift; sourceTree = "<group>"; };
 		BD0BF5F9243B7BB4000C7C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD0BF643243B8502000C7C7F /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		BD0BF645243B8548000C7C7F /* UIColorExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensionTests.swift; sourceTree = "<group>"; };
+		BD73FBA5243B89DA00AE9D81 /* UidHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UidHelper.swift; sourceTree = "<group>"; };
+		BDF9B997243B872B0018FBDA /* SettingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				BD0BF5F7243B7BB4000C7C7F /* ProductCatTests.swift */,
+				BD0BF645243B8548000C7C7F /* UIColorExtensionTests.swift */,
 				BD0BF5F9243B7BB4000C7C7F /* Info.plist */,
 			);
 			path = ProductCatTests;
@@ -90,8 +99,19 @@
 		BD0BF604243B7DA9000C7C7F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BD0BF63F243B7F46000C7C7F /* Helper */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		BD0BF63F243B7F46000C7C7F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BD0BF643243B8502000C7C7F /* UIColorExtension.swift */,
+				BDF9B997243B872B0018FBDA /* SettingHelper.swift */,
+				BD73FBA5243B89DA00AE9D81 /* UidHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +176,7 @@
 				TargetAttributes = {
 					BD0BF5E8243B7BB4000C7C7F = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					BD0BF5F1243B7BB4000C7C7F = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -203,6 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDF9B998243B872B0018FBDA /* SettingHelper.swift in Sources */,
+				BD0BF644243B8502000C7C7F /* UIColorExtension.swift in Sources */,
+				BD73FBA6243B89DA00AE9D81 /* UidHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD0BF5F8243B7BB4000C7C7F /* ProductCatTests.swift in Sources */,
+				BD0BF646243B8548000C7C7F /* UIColorExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +373,7 @@
 		BD0BF5FE243B7BB4000C7C7F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NKN6QECX9M;
@@ -366,6 +392,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -374,6 +401,7 @@
 		BD0BF5FF243B7BB4000C7C7F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NKN6QECX9M;
@@ -400,6 +428,7 @@
 		BD0BF601243B7BB4000C7C7F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NKN6QECX9M;
 				INFOPLIST_FILE = ProductCatTests/Info.plist;
@@ -418,6 +447,7 @@
 		BD0BF602243B7BB4000C7C7F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NKN6QECX9M;
 				INFOPLIST_FILE = ProductCatTests/Info.plist;
