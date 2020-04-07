@@ -11,50 +11,52 @@ import UIKit
 open class ImageSearchParams: BaseSearchParams {
     
     // MARK: properties
-    public var imUrl : String?
-    public var imId  : String?
-    public var box    : Box?
+    public var imUrl : String? = nil
+    public var imId  : String? = nil
+    public var box    : Box? = nil
     
     // image for upload
     public var imgSettings : ImageSettings = ImageSettings()
-    public var image : UIImage?
+    public var image : UIImage? = nil
     
     // for resizing
     private var compressedImage : UIImage?
     private var compressedImageData : Data?
     
+    public var autoRoi: Bool? = nil
+    
+    public var searchMinScore: Float? = nil
+    
+    public var showVisualScore: Bool? = nil
+    
+    public var detectionOnly: Bool? = nil
+    
+    
     public init(country: String, image: UIImage) {
-        super.init(country: country)
-        
         self.image = image
-        imId = nil
-        imUrl = nil
+        super.init(country: country)
     }
     
     public init?(country: String, imId : String){
-        super.init(country: country)
-        
         if imId.isEmpty {
             print("\(type(of: self)).\(#function)[line:\(#line)] - error: im_id parameter is missing")
             return nil
         }
         
         self.imId = imId
-        image = nil
-        imUrl = nil
+
+        super.init(country: country)
+        
     }
     
     public init?(country: String, imUrl : String){
-        super.init(country: country)
-        
         if imUrl.isEmpty {
             print("\(type(of: self)).\(#function)[line:\(#line)] - error: im_url parameter is missing")
             return nil
         }
         
         self.imUrl = imUrl
-        imId = nil
-        image = nil
+        super.init(country: country)
     }
     
     /// return the compressed/resize image data before uploading
@@ -111,23 +113,42 @@ open class ImageSearchParams: BaseSearchParams {
     public override func toDict() -> [String: String] {
         var dict = super.toDict()
         
+        if let autoRoi = self.autoRoi {
+            dict["auto_roi"] = String(autoRoi)
+        }
+        
+        if let showVisualScore = self.showVisualScore {
+            dict["show_visual_score"] = String(showVisualScore)
+        }
+        
+        if let searchMinScore = self.searchMinScore {
+            dict["search_min_score"] = String(searchMinScore)
+        }
+        
+        if let detectionOnly = self.detectionOnly {
+            dict["detection_only"] = String(detectionOnly)
+        }
+        
         if let box = box {
             dict["box"] = "\(box.x1),\(box.y1),\(box.x2),\(box.y2)"
         }
         
         if let image = image {
             genResizedBoxForImage(image, &dict)
-        }
-        else if let imUrl = self.imUrl {
-            dict["im_url"] = imUrl
-        }
-        else if let imgId = self.imId {
-            dict["im_id"] = imgId
-        }
-        else{
-            print ("image or im_url or im_id must be provided. Request likely will fail")
+            return dict
         }
         
+        if let imUrl = self.imUrl {
+            dict["im_url"] = imUrl
+            return dict
+        }
+        
+        if let imgId = self.imId {
+            dict["im_id"] = imgId
+            return dict
+        }
+        
+        print ("image or im_url or im_id must be provided. Request likely will fail")
         return dict;
     }
     
