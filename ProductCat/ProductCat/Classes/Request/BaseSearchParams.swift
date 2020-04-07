@@ -20,8 +20,14 @@ public protocol SearchParamsProtocol{
 
 open class BaseSearchParams: SearchParamsProtocol {
 
+    public init(country: String) {
+        self.country = country
+    }
+    
     // MARK: properties
     
+    /// country
+    public var country: String
     
     /// The number of results returned per page. The maximum number of results returned from the API is 100
     /// Default to 10
@@ -32,6 +38,18 @@ open class BaseSearchParams: SearchParamsProtocol {
     
     /// store ids filter
     public var storeIds: [Int] = []
+    
+    /// brand ids filter
+    public var brandIds: [Int] = []
+    
+    /// price filter
+    public var price: String? = nil
+    
+    /// custom thumbnail size in width height format e.g. 512x512
+    public var thumbnailSize : String? = nil
+    
+    /// sortby
+    public var sortBy : String? = nil
     
     /// List of fields to enable faceting i.e. store, brand or price
     public var facets    : [String] = []
@@ -46,6 +64,9 @@ open class BaseSearchParams: SearchParamsProtocol {
     public func toDict() -> [String: String] {
         var dict : [String:String] = [:]
         
+        // country is mandatory
+        dict["country"] = country
+        
         if limit > 0 {
             dict["limit"] = String(limit)
         }
@@ -56,6 +77,22 @@ open class BaseSearchParams: SearchParamsProtocol {
         
         if storeIds.count > 0 {
             dict["store_ids"] = ",".joinInts(self.storeIds)
+        }
+        
+        if brandIds.count > 0 {
+            dict["brand_ids"] = ",".joinInts(self.brandIds)
+        }
+        
+        if let price = self.price {
+            dict["price"] = price
+        }
+        
+        if let thumbnailSize = self.thumbnailSize {
+            dict["thumbnail_size"] = thumbnailSize
+        }
+        
+        if let sortBy = self.sortBy {
+            dict["sort_by"] = sortBy
         }
         
         if facets.count > 0 {
