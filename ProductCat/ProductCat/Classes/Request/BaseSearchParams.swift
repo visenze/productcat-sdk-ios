@@ -60,6 +60,8 @@ open class BaseSearchParams: SearchParamsProtocol {
     /// whether to show the facets count in the response.
     public var facetShowCount : Bool = false
     
+    
+    
     // MARK: search protocol
     public func toDict() -> [String: String] {
         var dict : [String:String] = [:]
