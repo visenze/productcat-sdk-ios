@@ -11,14 +11,14 @@ import UIKit
 open class RequestSerialization {
     
    /// generate the url with query string and escape parameter properly
-   public func generateRequestUrl( baseUrl: String , apiEndPoint: ProductCatAPIEndPoints , searchParams : SearchParamsProtocol, appKey: String) -> String {
+   public func generateRequestUrl( baseUrl: String , apiMethod: APIMethod , searchParams : SearchParamsProtocol, appKey: String) -> String {
        
        var searchParamsDict = searchParams.toDict()
        searchParamsDict["app_key"] = appKey
        
        let queryString = generateQueryString(searchParamsDict)
        
-       return "\(baseUrl)/\(apiEndPoint.rawValue)?\(queryString)"
+       return "\(baseUrl)/\(apiMethod.rawValue)?\(queryString)"
    }
    
    /// generate the query string to append to the url
