@@ -29,10 +29,21 @@ class ProductCatTests: XCTestCase {
         
         let expectation = self.expectation(description: "wait_for_response")
         
+//        let imgSearchParams = ImageSearchParams(
+//            country: ProductCat.sharedInstance.client!.country ,
+//            imUrl: "https://www.charleskeith.com/on/demandware.static/-/Sites-ck-products/default/dwe0bea60a/images/hi-res/2019-L6-CK3-11280374-08-1.jpg")
+        
+//        let imgSearchParams = ImageSearchParams(
+//            country: ProductCat.sharedInstance.client!.country ,
+//            imId: "")
+        
+        
         let imgSearchParams = ImageSearchParams(
             country: ProductCat.sharedInstance.client!.country ,
-            imUrl: "https://www.charleskeith.com/on/demandware.static/-/Sites-ck-products/default/dwe0bea60a/images/hi-res/2019-L6-CK3-11280374-08-1.jpg")
-        ProductCat.sharedInstance.imageSearch(params: imgSearchParams!,
+            image: UIImage(ciImage: CIImage(color: .red))
+        )
+        
+        ProductCat.sharedInstance.imageSearch(params: imgSearchParams,
                                               successHandler: {
                               (data : ProductSummaryResponse?) -> Void in
                                   // Do something when request succeeds
