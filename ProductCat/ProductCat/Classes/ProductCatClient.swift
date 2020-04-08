@@ -250,7 +250,7 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
             
             // TODO: we may have different response depending on API method
             // most api method would follow ProductSummaryResponse
-            let responseData = ProductSummaryResponse(response: response!, data: data!)
+            let responseData = ProductSummaryResponse(data: data!)
             
             successHandler(responseData)
             

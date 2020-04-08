@@ -32,8 +32,11 @@ open class SimpleResponse: NSObject {
         return !error.isEmpty
     }
     
+    /// request ID
+    public var reqid: String = ""
+    
     /// MARK: initializer
-    public init?(response: URLResponse, data: Data) {
+    public init?(data: Data) {
         super.init()
         
         do{
@@ -56,6 +59,10 @@ open class SimpleResponse: NSObject {
        if let errorArr = json["error"] as? [String] {
            self.error = errorArr
        }
+        
+        if let requestId = json["reqid"] as? String {
+            self.reqid = requestId
+        }
     
    }
     
