@@ -93,7 +93,7 @@ public class ProductSummaryResponse: SimpleResponse {
                 if let storeArr = dict["stores"] as? [Any] {
                     var stores : [Store] = []
                     for storeJson in storeArr {
-                        if let storeObj = storeJson as [String: Any] {
+                        if let storeObj = storeJson as? [String: Any] {
                             let storeId = storeObj["store_id"] as? Int ?? 0
                             let name = storeObj["name"] as? String ?? ""
                             let availability = storeObj["availability"] as? Int ?? 1
