@@ -33,6 +33,7 @@
 		BD73FBCF243DD1C600AE9D81 /* TagGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FBCE243DD1C600AE9D81 /* TagGroup.swift */; };
 		BD73FBD1243DDB3E00AE9D81 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FBD0243DDB3E00AE9D81 /* Store.swift */; };
 		BD73FBD3243E174D00AE9D81 /* ProductCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FBD2243E174D00AE9D81 /* ProductCat.swift */; };
+		BD73FBD5243E3CC200AE9D81 /* ResponseParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FBD4243E3CC200AE9D81 /* ResponseParserTests.swift */; };
 		BDF9B998243B872B0018FBDA /* SettingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF9B997243B872B0018FBDA /* SettingHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		BD73FBCE243DD1C600AE9D81 /* TagGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagGroup.swift; sourceTree = "<group>"; };
 		BD73FBD0243DDB3E00AE9D81 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		BD73FBD2243E174D00AE9D81 /* ProductCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCat.swift; sourceTree = "<group>"; };
+		BD73FBD4243E3CC200AE9D81 /* ResponseParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParserTests.swift; sourceTree = "<group>"; };
 		BDF9B997243B872B0018FBDA /* SettingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,8 +133,9 @@
 			children = (
 				BD0BF5F7243B7BB4000C7C7F /* ProductCatTests.swift */,
 				BD0BF645243B8548000C7C7F /* UIColorExtensionTests.swift */,
-				BD0BF5F9243B7BB4000C7C7F /* Info.plist */,
 				BD73FBB2243BA3B200AE9D81 /* StringExtensionsTests.swift */,
+				BD0BF5F9243B7BB4000C7C7F /* Info.plist */,
+				BD73FBD4243E3CC200AE9D81 /* ResponseParserTests.swift */,
 			);
 			path = ProductCatTests;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				BD73FBB3243BA3B200AE9D81 /* StringExtensionsTests.swift in Sources */,
 				BD0BF5F8243B7BB4000C7C7F /* ProductCatTests.swift in Sources */,
 				BD0BF646243B8548000C7C7F /* UIColorExtensionTests.swift in Sources */,
+				BD73FBD5243E3CC200AE9D81 /* ResponseParserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
