@@ -32,6 +32,7 @@
 		BD73FBCD243DD1B700AE9D81 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FBCC243DD1B700AE9D81 /* Tag.swift */; };
 		BD73FBCF243DD1C600AE9D81 /* TagGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FBCE243DD1C600AE9D81 /* TagGroup.swift */; };
 		BD73FBD1243DDB3E00AE9D81 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FBD0243DDB3E00AE9D81 /* Store.swift */; };
+		BD73FBD3243E174D00AE9D81 /* ProductCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FBD2243E174D00AE9D81 /* ProductCat.swift */; };
 		BDF9B998243B872B0018FBDA /* SettingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF9B997243B872B0018FBDA /* SettingHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		BD73FBCC243DD1B700AE9D81 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		BD73FBCE243DD1C600AE9D81 /* TagGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagGroup.swift; sourceTree = "<group>"; };
 		BD73FBD0243DDB3E00AE9D81 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		BD73FBD2243E174D00AE9D81 /* ProductCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCat.swift; sourceTree = "<group>"; };
 		BDF9B997243B872B0018FBDA /* SettingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 				BD73FBA7243B8C6000AE9D81 /* Request */,
 				BD0BF63F243B7F46000C7C7F /* Helper */,
 				BD73FBBE243C9F4200AE9D81 /* ProductCatClient.swift */,
+				BD73FBD2243E174D00AE9D81 /* ProductCat.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				BD73FBC5243DC7E200AE9D81 /* ProductSummary.swift in Sources */,
 				BDF9B998243B872B0018FBDA /* SettingHelper.swift in Sources */,
 				BD73FBC9243DC84E00AE9D81 /* Facet.swift in Sources */,
+				BD73FBD3243E174D00AE9D81 /* ProductCat.swift in Sources */,
 				BD0BF644243B8502000C7C7F /* UIColorExtension.swift in Sources */,
 				BD73FBC3243D890D00AE9D81 /* SimpleResponse.swift in Sources */,
 				BD73FBB5243C512100AE9D81 /* ImageSearchParams.swift in Sources */,
