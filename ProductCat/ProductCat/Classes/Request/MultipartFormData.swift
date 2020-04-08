@@ -49,16 +49,17 @@ public class MultipartFormData: NSObject {
     public static func encode(imageData: Data? , boundary: String) -> Data {
         var encoded = Data()
         
-        if imageData != nil {
-            let initialData = BoundaryGenerator.boundaryData(forBoundaryType: .initial, boundary: boundary)
-            encoded.append(initialData)
+        let initialData = BoundaryGenerator.boundaryData(forBoundaryType: .initial, boundary: boundary)
+        encoded.append(initialData)
+        
+        if let imageData = imageData {
             
             let headers = contentHeaders(withName: "image", fileName: "image.jpeg", mimeType: "image/jpeg")
             let headerData = encodeHeaders(headers: headers)
             encoded.append(headerData)
-            
-            encoded.append(imageData!)
+            encoded.append(imageData)
         }
+        
         let finalBoundaryData = BoundaryGenerator.boundaryData(forBoundaryType: .final, boundary: boundary)
         encoded.append(finalBoundaryData)
         

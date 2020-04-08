@@ -72,8 +72,9 @@ public class ProductSummaryResponse: SimpleResponse {
                 item.title = dict["title"] as! String
                 item.desc = (dict["desc"] as? String) ?? ""
                 item.productUrl = dict["product_url"] as! String
-                item.brand = dict["brand"] as! String
-                item.brandId = String(describing: dict["brand_id"])
+                item.brand = dict["brand"] as? String ?? ""
+                
+                item.brandId = dict["brand_id"] as? String ?? ""
                 item.country = dict["country"] as! String
                 item.minPrice = parseFloat(dict, "min_price")
                 item.maxPrice = parseFloat(dict, "max_price")
