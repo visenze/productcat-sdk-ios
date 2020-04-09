@@ -57,10 +57,10 @@ class ResponseParserTests: XCTestCase {
                     "max_o_price": 59.9,
                     "price_unit": "SGD",
                     "price_symbol": "S$",
-                    "original_min_price": 47.9,
-                    "original_max_price": 47.9,
-                    "original_min_o_price": 59.9,
-                    "original_max_o_price": 59.9,
+                    "original_min_price": 46.5,
+                    "original_max_price": 46.5,
+                    "original_min_o_price": 59.91,
+                    "original_max_o_price": 59.91,
                     "original_price_unit": "SGD",
                     "attrs": {
                         "source": "CHARLESNKEITH-SG"
@@ -189,6 +189,55 @@ class ResponseParserTests: XCTestCase {
             XCTAssertEqual("eyewear" , prodTypeObj.type)
             XCTAssertEqual("0.775" , String(prodTypeObj.score) )
             XCTAssertEqual("128,579,1017,947" , "\(prodTypeObj.box.x1),\(prodTypeObj.box.y1),\(prodTypeObj.box.x2),\(prodTypeObj.box.y2)" )
+            
+            let results = summaryResponse.result
+            let facets = summaryResponse.facets
+            let recResults = summaryResponse.recognizeResult
+            
+            XCTAssertEqual(2, results.count)
+            let product = results[0]
+            XCTAssertEqual("CHARLESNKEITH-SG_CK3-11280374_BLACK_R", product.pid)
+            XCTAssertEqual("e118158500ff5ce596346ff78af67596", product.pgid)
+            XCTAssertEqual("https://imgresize.visenze.com/512x512/4413606067000017b35e672aae006e012226076c74.jpg", product.mainImage)
+            XCTAssertEqual("Black Square Double Bridge Sunglasses", product.title)
+            XCTAssertEqual("Charles & Keith", product.brand)
+            XCTAssertEqual("1074300717", product.brandId)
+            XCTAssertEqual("SG", product.country)
+            XCTAssertEqual(47.9, product.minPrice)
+            XCTAssertEqual(47.9, product.maxPrice)
+            XCTAssertEqual(59.9, product.minOPrice)
+            XCTAssertEqual(59.9, product.maxOPrice)
+            XCTAssertEqual("SGD", product.priceUnit)
+            XCTAssertEqual("S$", product.priceSymbol)
+            XCTAssertEqual(46.5, product.originalMinPrice)
+            XCTAssertEqual(46.5, product.originalMaxPrice)
+            
+            XCTAssertEqual(59.91, product.originalMinOPrice)
+            XCTAssertEqual(59.91, product.originalMaxOPrice)
+            
+            XCTAssertEqual("SGD", product.originalPriceUnit)
+        XCTAssertEqual("https://productcat-api.visenze.com/redirect/CHARLESNKEITH-SG_CK3-11280374_BLACK_R?cid=1005&reqid=05OLLHBK15RUP75Q266A4ECR&pos=1&country=SG" , product.productUrl)
+            let store = product.stores[0]
+            
+            XCTAssertEqual(426790539, store.storeId)
+            XCTAssertEqual("Charles & Keith", store.name)
+            XCTAssertEqual(1, store.availability)
+            
+            let storeFacet = facets[0]
+            let priceFacet = facets[1]
+            
+            XCTAssertEqual( "store" , storeFacet.key)
+            let storeItems = storeFacet.items
+            XCTAssertEqual(3, storeItems.count)
+            XCTAssertEqual(22, storeItems[0].count)
+            XCTAssertEqual(951123913, storeItems[0].id)
+            XCTAssertEqual("Farfetch", storeItems[0].name!)
+            XCTAssertEqual("FARFETCH-PRF-AF-GB", storeItems[0].value)
+            
+            
+            XCTAssertEqual( "price" , priceFacet.key)
+            XCTAssertEqual(2.5 , priceFacet.min!)
+            XCTAssertEqual(1081.44 , priceFacet.max!)
             
             
         }
