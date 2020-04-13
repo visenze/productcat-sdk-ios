@@ -100,6 +100,21 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
     
     // MARK: APIs
     
+    public func showConsentForm() {
+        if var topController = UIApplication.shared.keyWindow?.rootViewController {
+            while let presentedViewController = topController.presentedViewController {
+                topController = presentedViewController
+            }
+
+            // topController should now be topmost view controller
+            let storyboard = UIStoryboard(name: "ProductCatPrivacyFlow", bundle: Bundle(for:ProductCatClient.self))
+            let consentFormAlert = storyboard.instantiateViewController(withIdentifier: "consentForm")
+            consentFormAlert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+            consentFormAlert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+            topController.present(consentFormAlert, animated: true, completion: nil)
+        }
+    }
+    
     public func textSearch(params: TextSearchParams,
                             successHandler: @escaping SuccessSearchResultsHandler,
                             failureHandler: @escaping FailureHandler

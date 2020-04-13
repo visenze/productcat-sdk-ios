@@ -16,6 +16,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func showConsentForm(_ sender: Any) {
+        ProductCat.sharedInstance.showConsentForm()
+        
+    }
+    
+    
     @IBAction func testBtnClick(_ sender: Any) {
         let imgSearchParams = ImageSearchParams(
             country: ProductCat.sharedInstance.client!.country ,

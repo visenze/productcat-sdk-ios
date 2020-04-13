@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Consent Form View Controller-->
+        <scene sceneID="s6q-kP-jXm">
+            <objects>
+                <viewController storyboardIdentifier="consentForm" id="chp-tL-9nW" customClass="ConsentFormViewController" customModule="ProductCat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jNn-VF-m24">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJP-PL-g6p">
+                                <rect key="frame" x="16" y="229" width="382" height="438"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="o9A-xR-pMf">
+                                        <rect key="frame" x="16" y="40" width="350" height="358"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsL-9W-YGi" userLabel="welcomeLabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="21.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmm-lu-SLl">
+                                                <rect key="frame" x="0.0" y="21.5" width="350" height="14"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="dfa-Wa-Rax"/>
+                                                </constraints>
+                                            </view>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFo-Kq-0cc">
+                                                <rect key="frame" x="0.0" y="35.5" width="350" height="322.5"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <mutableString key="text">Welcome to visual shopping! Start to snap, search and shop with us.
+
+We value your privacy and personal data. 
+We will only collect, use, disclose and/or process your personal data in accordance with our privacy policy.
+
+Privacy policy
+
+Terms of use
+
+
+
+
+   
+
+</mutableString>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="o9A-xR-pMf" firstAttribute="centerX" secondItem="uJP-PL-g6p" secondAttribute="centerX" id="1DN-4V-Ge3"/>
+                                    <constraint firstItem="o9A-xR-pMf" firstAttribute="top" secondItem="uJP-PL-g6p" secondAttribute="top" constant="40" id="5Qf-8v-78B"/>
+                                    <constraint firstAttribute="trailing" secondItem="o9A-xR-pMf" secondAttribute="trailing" constant="16" id="5lz-xd-bnO"/>
+                                    <constraint firstItem="o9A-xR-pMf" firstAttribute="leading" secondItem="uJP-PL-g6p" secondAttribute="leading" constant="16" id="80S-KX-kst"/>
+                                    <constraint firstItem="o9A-xR-pMf" firstAttribute="centerY" secondItem="uJP-PL-g6p" secondAttribute="centerY" id="CYt-cB-3TY"/>
+                                    <constraint firstAttribute="height" constant="438" id="RrX-gi-GhR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.023529411764705882" blue="0.078431372549019607" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uJP-PL-g6p" firstAttribute="centerY" secondItem="jNn-VF-m24" secondAttribute="centerY" id="2JY-Oi-S2L"/>
+                            <constraint firstItem="ze5-BB-sqq" firstAttribute="trailing" secondItem="uJP-PL-g6p" secondAttribute="trailing" constant="16" id="OBs-Jd-9zJ"/>
+                            <constraint firstItem="uJP-PL-g6p" firstAttribute="leading" secondItem="ze5-BB-sqq" secondAttribute="leading" constant="16" id="edO-gx-56Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ze5-BB-sqq"/>
+                    </view>
+                    <connections>
+                        <outlet property="descTextView" destination="BFo-Kq-0cc" id="O8S-DJ-99J"/>
+                        <outlet property="textViewContainer" destination="uJP-PL-g6p" id="Wej-hJ-tyb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QdX-Lq-fGa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="-78.348214285714278"/>
+        </scene>
+    </scenes>
+</document>

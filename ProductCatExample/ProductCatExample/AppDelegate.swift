@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // TODO: fill in your app key and search country here
-        ProductCat.sharedInstance.setup(appKey: "", country: "SG")
+        ProductCat.sharedInstance.setup(appKey: "YOUR_APP_KEY", country: "SG")
         
         return true
     }

@@ -16,6 +16,8 @@
 		BD73FC38244436AF00AE9D81 /* ProductCatExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FC37244436AF00AE9D81 /* ProductCatExampleTests.swift */; };
 		BD73FC43244436AF00AE9D81 /* ProductCatExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FC42244436AF00AE9D81 /* ProductCatExampleUITests.swift */; };
 		BD73FC6324443FA500AE9D81 /* ProductCat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD73FC5F2444370A00AE9D81 /* ProductCat.framework */; };
+		BDCFBD2C24448D6300367FB4 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDCFBD2924448D6300367FB4 /* AdSupport.framework */; };
+		BDCFBD3124448EAC00367FB4 /* ProductCat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD73FC5F2444370A00AE9D81 /* ProductCat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +49,28 @@
 			remoteGlobalIDString = BD0BF5F2243B7BB4000C7C7F;
 			remoteInfo = ProductCatTests;
 		};
+		BDCFBD2D24448DCE00367FB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD73FC592444370A00AE9D81 /* ProductCat.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BD0BF5E8243B7BB4000C7C7F;
+			remoteInfo = ProductCat;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BDCFBD3024448E9900367FB4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BDCFBD3124448EAC00367FB4 /* ProductCat.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BD73FC1D244436AC00AE9D81 /* ProductCatExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductCatExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +88,7 @@
 		BD73FC42244436AF00AE9D81 /* ProductCatExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCatExampleUITests.swift; sourceTree = "<group>"; };
 		BD73FC44244436AF00AE9D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD73FC592444370A00AE9D81 /* ProductCat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProductCat.xcodeproj; path = ../ProductCat/ProductCat.xcodeproj; sourceTree = "<group>"; };
+		BDCFBD2924448D6300367FB4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDCFBD2C24448D6300367FB4 /* AdSupport.framework in Frameworks */,
 				BD73FC6324443FA500AE9D81 /* ProductCat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +184,7 @@
 		BD73FC6224443FA500AE9D81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BDCFBD2924448D6300367FB4 /* AdSupport.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,10 +199,12 @@
 				BD73FC19244436AC00AE9D81 /* Sources */,
 				BD73FC1A244436AC00AE9D81 /* Frameworks */,
 				BD73FC1B244436AC00AE9D81 /* Resources */,
+				BDCFBD3024448E9900367FB4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BDCFBD2E24448DCE00367FB4 /* PBXTargetDependency */,
 			);
 			name = ProductCatExample;
 			productName = ProductCatExample;
@@ -351,6 +379,11 @@
 			isa = PBXTargetDependency;
 			target = BD73FC1C244436AC00AE9D81 /* ProductCatExample */;
 			targetProxy = BD73FC3F244436AF00AE9D81 /* PBXContainerItemProxy */;
+		};
+		BDCFBD2E24448DCE00367FB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProductCat;
+			targetProxy = BDCFBD2D24448DCE00367FB4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

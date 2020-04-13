@@ -45,6 +45,10 @@ open class ProductCat: NSObject {
     
     // MARK: API calls
     
+    public func showConsentForm() {
+        client?.showConsentForm()
+    }
+    
     /// Text Search
     @discardableResult public func textSearch(
         params: TextSearchParams,

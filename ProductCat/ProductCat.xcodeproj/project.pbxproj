@@ -35,6 +35,9 @@
 		BD73FBD3243E174D00AE9D81 /* ProductCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FBD2243E174D00AE9D81 /* ProductCat.swift */; };
 		BD73FBD5243E3CC200AE9D81 /* ResponseParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FBD4243E3CC200AE9D81 /* ResponseParserTests.swift */; };
 		BD73FC6624444F7700AE9D81 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD73FC6524444F7700AE9D81 /* AdSupport.framework */; };
+		BD73FC69244470F500AE9D81 /* ProductCatPrivacyFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD73FC68244470F500AE9D81 /* ProductCatPrivacyFlow.storyboard */; };
+		BD73FC6B2444716D00AE9D81 /* ConsentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FC6A2444716D00AE9D81 /* ConsentFormViewController.swift */; };
+		BDCFBD282444882A00367FB4 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBD272444882A00367FB4 /* UITextViewExtension.swift */; };
 		BDF9B998243B872B0018FBDA /* SettingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF9B997243B872B0018FBDA /* SettingHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +83,9 @@
 		BD73FBD2243E174D00AE9D81 /* ProductCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCat.swift; sourceTree = "<group>"; };
 		BD73FBD4243E3CC200AE9D81 /* ResponseParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParserTests.swift; sourceTree = "<group>"; };
 		BD73FC6524444F7700AE9D81 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		BD73FC68244470F500AE9D81 /* ProductCatPrivacyFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductCatPrivacyFlow.storyboard; sourceTree = "<group>"; };
+		BD73FC6A2444716D00AE9D81 /* ConsentFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentFormViewController.swift; sourceTree = "<group>"; };
+		BDCFBD272444882A00367FB4 /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
 		BDF9B997243B872B0018FBDA /* SettingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +153,7 @@
 		BD0BF604243B7DA9000C7C7F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BD73FC6724446FF000AE9D81 /* PrivacyPolicy */,
 				BD73FBA8243B8C6800AE9D81 /* Response */,
 				BD73FBA7243B8C6000AE9D81 /* Request */,
 				BD0BF63F243B7F46000C7C7F /* Helper */,
@@ -163,6 +170,7 @@
 				BDF9B997243B872B0018FBDA /* SettingHelper.swift */,
 				BD73FBA5243B89DA00AE9D81 /* UidHelper.swift */,
 				BD73FBAE243B9ECF00AE9D81 /* StringExtensions.swift */,
+				BDCFBD272444882A00367FB4 /* UITextViewExtension.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -203,6 +211,15 @@
 				BD73FC6524444F7700AE9D81 /* AdSupport.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD73FC6724446FF000AE9D81 /* PrivacyPolicy */ = {
+			isa = PBXGroup;
+			children = (
+				BD73FC68244470F500AE9D81 /* ProductCatPrivacyFlow.storyboard */,
+				BD73FC6A2444716D00AE9D81 /* ConsentFormViewController.swift */,
+			);
+			path = PrivacyPolicy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD73FC69244470F500AE9D81 /* ProductCatPrivacyFlow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +338,7 @@
 				BD73FBAF243B9ECF00AE9D81 /* StringExtensions.swift in Sources */,
 				BD73FBC5243DC7E200AE9D81 /* ProductSummary.swift in Sources */,
 				BDF9B998243B872B0018FBDA /* SettingHelper.swift in Sources */,
+				BD73FC6B2444716D00AE9D81 /* ConsentFormViewController.swift in Sources */,
 				BD73FBC9243DC84E00AE9D81 /* Facet.swift in Sources */,
 				BD73FBD3243E174D00AE9D81 /* ProductCat.swift in Sources */,
 				BD0BF644243B8502000C7C7F /* UIColorExtension.swift in Sources */,
@@ -329,6 +348,7 @@
 				BD73FBBB243C742400AE9D81 /* MultipartFormData.swift in Sources */,
 				BD73FBB9243C55CB00AE9D81 /* TextSearchParams.swift in Sources */,
 				BD73FBCD243DD1B700AE9D81 /* Tag.swift in Sources */,
+				BDCFBD282444882A00367FB4 /* UITextViewExtension.swift in Sources */,
 				BD73FBAA243B8CBC00AE9D81 /* BaseSearchParams.swift in Sources */,
 				BD73FBC1243CA43C00AE9D81 /* ProductSummaryResponse.swift in Sources */,
 				BD73FBCF243DD1C600AE9D81 /* TagGroup.swift in Sources */,

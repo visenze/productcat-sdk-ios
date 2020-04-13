@@ -16,17 +16,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UT3-ni-PyD">
-                                <rect key="frame" x="192" y="433" width="30" height="30"/>
-                                <state key="normal" title="Test"/>
+                                <rect key="frame" x="166.5" y="433" width="81" height="30"/>
+                                <state key="normal" title="Test Search"/>
                                 <connections>
                                     <action selector="testBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o9w-6E-Ji4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xax-y2-1HA">
+                                <rect key="frame" x="137.5" y="493" width="139" height="30"/>
+                                <state key="normal" title="Show Consent Form"/>
+                                <connections>
+                                    <action selector="showConsentForm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d4L-lp-VST"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="UT3-ni-PyD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b4P-Ji-zfD"/>
+                            <constraint firstItem="Xax-y2-1HA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c9z-Wf-HiN"/>
                             <constraint firstItem="UT3-ni-PyD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iEj-Rd-Ntp"/>
+                            <constraint firstItem="Xax-y2-1HA" firstAttribute="top" secondItem="UT3-ni-PyD" secondAttribute="top" constant="60" id="tz0-Wq-m87"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
