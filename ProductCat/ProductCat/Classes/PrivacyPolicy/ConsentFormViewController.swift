@@ -8,11 +8,12 @@
 
 import UIKit
 
-open class ConsentFormViewController: UIViewController {
+open class ConsentFormViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var descTextView: UITextView!
-    
     @IBOutlet weak var textViewContainer: UIView!
+    @IBOutlet weak var acceptBtn: UIButton!
+    @IBOutlet weak var declineBtn: UIButton!
     
     open override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,16 @@ open class ConsentFormViewController: UIViewController {
             "Terms of use" : "https://shopping.visenze.com/terms-of-use"
         ])
         
+        descTextView.delegate = self
+        
+        acceptBtn.layer.cornerRadius = 3.0
+        acceptBtn.backgroundColor = UIColor(hexString: "#283d78")
+        
+    }
+    
+    open func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+        UIApplication.shared.open(URL)
+        return false
     }
     
 

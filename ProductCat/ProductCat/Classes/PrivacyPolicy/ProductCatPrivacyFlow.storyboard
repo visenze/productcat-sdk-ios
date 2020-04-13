@@ -17,27 +17,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJP-PL-g6p">
-                                <rect key="frame" x="16" y="229" width="382" height="438"/>
+                                <rect key="frame" x="16" y="224" width="382" height="448"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="o9A-xR-pMf">
-                                        <rect key="frame" x="16" y="40" width="350" height="358"/>
+                                        <rect key="frame" x="16" y="40" width="350" height="368"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsL-9W-YGi" userLabel="welcomeLabel">
-                                                <rect key="frame" x="0.0" y="0.0" width="350" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="dLB-fQ-Rra"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmm-lu-SLl">
-                                                <rect key="frame" x="0.0" y="21.5" width="350" height="14"/>
+                                                <rect key="frame" x="0.0" y="20" width="350" height="20"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="14" id="dfa-Wa-Rax"/>
-                                                </constraints>
                                             </view>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFo-Kq-0cc">
-                                                <rect key="frame" x="0.0" y="35.5" width="350" height="322.5"/>
+                                                <rect key="frame" x="0.0" y="40" width="350" height="240"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="240" id="guo-xl-rmY"/>
+                                                </constraints>
                                                 <mutableString key="text">Welcome to visual shopping! Start to snap, search and shop with us.
 
 We value your privacy and personal data. 
@@ -57,6 +60,26 @@ Terms of use
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOa-LB-9qL" userLabel="acceptBtn">
+                                                <rect key="frame" x="0.0" y="280" width="350" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="ia1-yY-dLW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <state key="normal" title="Accept">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTj-Hq-yaC" userLabel="declineBtn">
+                                                <rect key="frame" x="0.0" y="324" width="350" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="svK-NS-vQS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <state key="normal" title="Decline">
+                                                    <color key="titleColor" red="0.15686274509803921" green="0.23921568627450979" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -68,7 +91,7 @@ Terms of use
                                     <constraint firstAttribute="trailing" secondItem="o9A-xR-pMf" secondAttribute="trailing" constant="16" id="5lz-xd-bnO"/>
                                     <constraint firstItem="o9A-xR-pMf" firstAttribute="leading" secondItem="uJP-PL-g6p" secondAttribute="leading" constant="16" id="80S-KX-kst"/>
                                     <constraint firstItem="o9A-xR-pMf" firstAttribute="centerY" secondItem="uJP-PL-g6p" secondAttribute="centerY" id="CYt-cB-3TY"/>
-                                    <constraint firstAttribute="height" constant="438" id="RrX-gi-GhR"/>
+                                    <constraint firstAttribute="height" constant="448" id="RrX-gi-GhR"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -81,6 +104,8 @@ Terms of use
                         <viewLayoutGuide key="safeArea" id="ze5-BB-sqq"/>
                     </view>
                     <connections>
+                        <outlet property="acceptBtn" destination="yOa-LB-9qL" id="zII-UD-ONy"/>
+                        <outlet property="declineBtn" destination="hTj-Hq-yaC" id="7MT-Gx-SwL"/>
                         <outlet property="descTextView" destination="BFo-Kq-0cc" id="O8S-DJ-99J"/>
                         <outlet property="textViewContainer" destination="uJP-PL-g6p" id="Wej-hJ-tyb"/>
                     </connections>
