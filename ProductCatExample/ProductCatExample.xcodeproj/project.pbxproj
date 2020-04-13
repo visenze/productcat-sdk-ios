@@ -15,6 +15,7 @@
 		BD73FC2D244436AF00AE9D81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD73FC2B244436AF00AE9D81 /* LaunchScreen.storyboard */; };
 		BD73FC38244436AF00AE9D81 /* ProductCatExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FC37244436AF00AE9D81 /* ProductCatExampleTests.swift */; };
 		BD73FC43244436AF00AE9D81 /* ProductCatExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FC42244436AF00AE9D81 /* ProductCatExampleUITests.swift */; };
+		BD73FC6324443FA500AE9D81 /* ProductCat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD73FC5F2444370A00AE9D81 /* ProductCat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD73FC6324443FA500AE9D81 /* ProductCat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +101,7 @@
 				BD73FC36244436AF00AE9D81 /* ProductCatExampleTests */,
 				BD73FC41244436AF00AE9D81 /* ProductCatExampleUITests */,
 				BD73FC1E244436AC00AE9D81 /* Products */,
+				BD73FC6224443FA500AE9D81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +154,13 @@
 				BD73FC612444370A00AE9D81 /* ProductCatTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BD73FC6224443FA500AE9D81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -489,6 +499,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.visenze.ProductCatExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -507,6 +518,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.visenze.ProductCatExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

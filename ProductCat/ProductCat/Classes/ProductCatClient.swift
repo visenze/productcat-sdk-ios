@@ -87,9 +87,13 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
         session = URLSession(configuration: sessionConfig)
         
         // set default user agent
-        let info = Bundle.main.infoDictionary
-        let appVersion = info?["CFBundleShortVersionString"] as? String ?? "Unknown"
-        self.userAgent = "productcat-ios/\(appVersion)"
+        var productClientVersion : String = "Unknown"
+    
+        if let sdkVersion = Bundle(for:ProductCatClient.self).infoDictionary?["CFBundleShortVersionString"] as? String {
+            productClientVersion = sdkVersion
+        }
+        
+        self.userAgent = "productcat-ios/\(productClientVersion)"
         
     }
     

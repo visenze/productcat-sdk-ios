@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ProductCat
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // TODO: fill in your app key and search country here
+        ProductCat.sharedInstance.setup(appKey: "", country: "SG")
+        
         return true
     }
 
