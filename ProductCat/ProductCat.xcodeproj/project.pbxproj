@@ -38,6 +38,7 @@
 		BD73FC69244470F500AE9D81 /* ProductCatPrivacyFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD73FC68244470F500AE9D81 /* ProductCatPrivacyFlow.storyboard */; };
 		BD73FC6B2444716D00AE9D81 /* ConsentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FC6A2444716D00AE9D81 /* ConsentFormViewController.swift */; };
 		BDCFBD282444882A00367FB4 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBD272444882A00367FB4 /* UITextViewExtension.swift */; };
+		BDCFBD332444953200367FB4 /* ProductRecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBD322444953200367FB4 /* ProductRecommendationViewController.swift */; };
 		BDF9B998243B872B0018FBDA /* SettingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF9B997243B872B0018FBDA /* SettingHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		BD73FC68244470F500AE9D81 /* ProductCatPrivacyFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductCatPrivacyFlow.storyboard; sourceTree = "<group>"; };
 		BD73FC6A2444716D00AE9D81 /* ConsentFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentFormViewController.swift; sourceTree = "<group>"; };
 		BDCFBD272444882A00367FB4 /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		BDCFBD322444953200367FB4 /* ProductRecommendationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRecommendationViewController.swift; sourceTree = "<group>"; };
 		BDF9B997243B872B0018FBDA /* SettingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,6 +220,7 @@
 			children = (
 				BD73FC68244470F500AE9D81 /* ProductCatPrivacyFlow.storyboard */,
 				BD73FC6A2444716D00AE9D81 /* ConsentFormViewController.swift */,
+				BDCFBD322444953200367FB4 /* ProductRecommendationViewController.swift */,
 			);
 			path = PrivacyPolicy;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				BD73FC6B2444716D00AE9D81 /* ConsentFormViewController.swift in Sources */,
 				BD73FBC9243DC84E00AE9D81 /* Facet.swift in Sources */,
 				BD73FBD3243E174D00AE9D81 /* ProductCat.swift in Sources */,
+				BDCFBD332444953200367FB4 /* ProductRecommendationViewController.swift in Sources */,
 				BD0BF644243B8502000C7C7F /* UIColorExtension.swift in Sources */,
 				BD73FBC3243D890D00AE9D81 /* SimpleResponse.swift in Sources */,
 				BD73FBB5243C512100AE9D81 /* ImageSearchParams.swift in Sources */,
