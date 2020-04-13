@@ -34,6 +34,7 @@
 		BD73FBD1243DDB3E00AE9D81 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FBD0243DDB3E00AE9D81 /* Store.swift */; };
 		BD73FBD3243E174D00AE9D81 /* ProductCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FBD2243E174D00AE9D81 /* ProductCat.swift */; };
 		BD73FBD5243E3CC200AE9D81 /* ResponseParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FBD4243E3CC200AE9D81 /* ResponseParserTests.swift */; };
+		BD73FC6624444F7700AE9D81 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD73FC6524444F7700AE9D81 /* AdSupport.framework */; };
 		BDF9B998243B872B0018FBDA /* SettingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF9B997243B872B0018FBDA /* SettingHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		BD73FBD0243DDB3E00AE9D81 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		BD73FBD2243E174D00AE9D81 /* ProductCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCat.swift; sourceTree = "<group>"; };
 		BD73FBD4243E3CC200AE9D81 /* ResponseParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseParserTests.swift; sourceTree = "<group>"; };
+		BD73FC6524444F7700AE9D81 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		BDF9B997243B872B0018FBDA /* SettingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD73FC6624444F7700AE9D81 /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +109,7 @@
 				BD0BF5EB243B7BB4000C7C7F /* ProductCat */,
 				BD0BF5F6243B7BB4000C7C7F /* ProductCatTests */,
 				BD0BF5EA243B7BB4000C7C7F /* Products */,
+				BD73FC6424444F7700AE9D81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,6 +195,14 @@
 				BD73FBD0243DDB3E00AE9D81 /* Store.swift */,
 			);
 			path = Response;
+			sourceTree = "<group>";
+		};
+		BD73FC6424444F7700AE9D81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD73FC6524444F7700AE9D81 /* AdSupport.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

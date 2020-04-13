@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AdSupport
 
 public enum ViHttpMethod: String {
     case GET = "GET"
@@ -149,6 +150,9 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
     }
     
     private func buildSearchPostRequest(params: ImageSearchParams, apiMethod: APIMethod) -> NSMutableURLRequest {
+        
+        self.trackIdfa(params)
+        
         // NOTE: image must be first line before generating of url
         // url box parameters depend on whether the compress image is generated
         let imageData = params.generateCompressImageForUpload()
@@ -173,6 +177,7 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
                                    successHandler: @escaping SuccessHandler,
                                    failureHandler: @escaping FailureHandler
         ) -> URLSessionTask{
+        self.trackIdfa(params)
         
         let url = requestSerialization.generateRequestUrl(baseUrl: baseUrl, apiMethod: apiMethod , searchParams: params, appKey: self.appKey)
        
@@ -189,6 +194,24 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
             },
             failureHandler: failureHandler )
         
+    }
+    
+    // idfa collection
+    private func trackIdfa(_ params: BaseSearchParams) -> Void {
+        if let idfa = identifierForAdvertising() {
+            params.ifa = idfa
+            
+            print ("ifa: \(idfa)")
+        }
+    }
+    
+    private func identifierForAdvertising() -> String? {
+        // check if advertising tracking is enabled in user’s setting
+        if ASIdentifierManager.shared().isAdvertisingTrackingEnabled {
+            return ASIdentifierManager.shared().advertisingIdentifier.uuidString
+        }
+        
+        return nil
     }
     
     private func httpGet(
