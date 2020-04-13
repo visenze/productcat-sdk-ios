@@ -200,8 +200,6 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
     private func trackIdfa(_ params: BaseSearchParams) -> Void {
         if let idfa = identifierForAdvertising() {
             params.ifa = idfa
-            
-            print ("ifa: \(idfa)")
         }
     }
     
