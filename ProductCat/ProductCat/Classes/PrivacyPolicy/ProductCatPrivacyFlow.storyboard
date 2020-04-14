@@ -165,6 +165,7 @@ Terms of use
                                                 </state>
                                                 <connections>
                                                     <action selector="acceptClick:" destination="x0H-eM-U1J" eventType="touchUpInside" id="vzh-EL-asS"/>
+                                                    <segue destination="chp-tL-9nW" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="A6w-hT-sPu"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFg-9u-z4b" userLabel="declineBtn">

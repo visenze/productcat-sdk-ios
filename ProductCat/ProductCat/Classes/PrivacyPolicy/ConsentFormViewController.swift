@@ -8,8 +8,15 @@
 
 import UIKit
 
+protocol ConsentFormDelegate: class {
+    func acceptTerms()
+    func declineTerms()
+}
+
 open class ConsentFormViewController: UIViewController, UITextViewDelegate {
 
+    weak var delegate: ConsentFormDelegate?
+    
     @IBOutlet weak var descTextView: UITextView!
     @IBOutlet weak var textViewContainer: UIView!
     @IBOutlet weak var acceptBtn: UIButton!
@@ -43,12 +50,19 @@ open class ConsentFormViewController: UIViewController, UITextViewDelegate {
     
 
     @IBAction func declineClick(_ sender: Any) {
-    
+        
+        self.dismiss(animated: true) {
+            self.delegate?.declineTerms()
+        }
+        
     }
     
     
     @IBAction func acceptClick(_ sender: Any) {
-    
+        
+        // move to product recommendation
+        self.delegate?.acceptTerms()
+        self.view.isHidden = true
     }
     
     
