@@ -121,6 +121,7 @@ open class BaseSearchParams: SearchParamsProtocol {
     
     public var sImgMime: String?
     
+    public var doNotTrack: Bool = true
     
     // MARK: search protocol
    
@@ -181,6 +182,8 @@ open class BaseSearchParams: SearchParamsProtocol {
             dict["facets_limit"] = String(self.facetsLimit)
             dict["facets_show_count"] = String(self.facetShowCount)
         }
+        
+        dict["do_not_track"] = self.doNotTrack ? "yes" : "no"
         
         addSponsorContentParams(&dict)
         
