@@ -166,7 +166,7 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
     
     private func buildSearchPostRequest(params: ImageSearchParams, apiMethod: APIMethod) -> NSMutableURLRequest {
         
-        self.trackIdfa(params)
+        self.trackDevice(params)
         
         // NOTE: image must be first line before generating of url
         // url box parameters depend on whether the compress image is generated
@@ -192,7 +192,7 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
                                    successHandler: @escaping SuccessHandler,
                                    failureHandler: @escaping FailureHandler
         ) -> URLSessionTask{
-        self.trackIdfa(params)
+        self.trackDevice(params)
         
         let url = requestSerialization.generateRequestUrl(baseUrl: baseUrl, apiMethod: apiMethod , searchParams: params, appKey: self.appKey)
        
@@ -209,6 +209,15 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
             },
             failureHandler: failureHandler )
         
+    }
+    
+    private func trackDevice(_ params: BaseSearchParams) -> Void {
+        
+        // set uid
+        params.uid = UidHelper.uniqueDeviceUid()
+        
+        // set idfa if available
+        self.trackIdfa(params)
     }
     
     // idfa collection

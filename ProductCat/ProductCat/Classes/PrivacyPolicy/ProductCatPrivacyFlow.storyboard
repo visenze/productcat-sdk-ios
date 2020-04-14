@@ -135,7 +135,7 @@ Do you agree to proceed?</string>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="240" id="ULY-N5-HpI"/>
                                                 </constraints>
-                                                <mutableString key="text">Welcome to visual shopping! Start to snap, search and shop with us.
+                                                <string key="text">Welcome to visual shopping! Start to snap, search and shop with us.
 
 We value your privacy and personal data. 
 We will only collect, use, disclose and/or process your personal data in accordance with our privacy policy.
@@ -149,7 +149,7 @@ Terms of use
 
    
 
-</mutableString>
+</string>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -163,6 +163,9 @@ Terms of use
                                                 <state key="normal" title="Accept">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="acceptClick:" destination="x0H-eM-U1J" eventType="touchUpInside" id="vzh-EL-asS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFg-9u-z4b" userLabel="declineBtn">
                                                 <rect key="frame" x="0.0" y="324" width="350" height="44"/>
@@ -173,6 +176,9 @@ Terms of use
                                                 <state key="normal" title="Decline">
                                                     <color key="titleColor" red="0.15686274510000001" green="0.23921568630000001" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="declineClick:" destination="x0H-eM-U1J" eventType="touchUpInside" id="Gec-Cu-XRK"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

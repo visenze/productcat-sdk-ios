@@ -39,6 +39,7 @@
 		BD73FC6B2444716D00AE9D81 /* ConsentFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FC6A2444716D00AE9D81 /* ConsentFormViewController.swift */; };
 		BDCFBD282444882A00367FB4 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBD272444882A00367FB4 /* UITextViewExtension.swift */; };
 		BDCFBD332444953200367FB4 /* ProductRecommendationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBD322444953200367FB4 /* ProductRecommendationViewController.swift */; };
+		BDCFBD36244556D800367FB4 /* ProductCatThemeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCFBD35244556D800367FB4 /* ProductCatThemeConstants.swift */; };
 		BDF9B998243B872B0018FBDA /* SettingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF9B997243B872B0018FBDA /* SettingHelper.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		BD73FC6A2444716D00AE9D81 /* ConsentFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentFormViewController.swift; sourceTree = "<group>"; };
 		BDCFBD272444882A00367FB4 /* UITextViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
 		BDCFBD322444953200367FB4 /* ProductRecommendationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRecommendationViewController.swift; sourceTree = "<group>"; };
+		BDCFBD35244556D800367FB4 /* ProductCatThemeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCatThemeConstants.swift; sourceTree = "<group>"; };
 		BDF9B997243B872B0018FBDA /* SettingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 		BD0BF604243B7DA9000C7C7F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BDCFBD34244556C000367FB4 /* Theme */,
 				BD73FC6724446FF000AE9D81 /* PrivacyPolicy */,
 				BD73FBA8243B8C6800AE9D81 /* Response */,
 				BD73FBA7243B8C6000AE9D81 /* Request */,
@@ -223,6 +226,14 @@
 				BDCFBD322444953200367FB4 /* ProductRecommendationViewController.swift */,
 			);
 			path = PrivacyPolicy;
+			sourceTree = "<group>";
+		};
+		BDCFBD34244556C000367FB4 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				BDCFBD35244556D800367FB4 /* ProductCatThemeConstants.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +365,7 @@
 				BD73FBCD243DD1B700AE9D81 /* Tag.swift in Sources */,
 				BDCFBD282444882A00367FB4 /* UITextViewExtension.swift in Sources */,
 				BD73FBAA243B8CBC00AE9D81 /* BaseSearchParams.swift in Sources */,
+				BDCFBD36244556D800367FB4 /* ProductCatThemeConstants.swift in Sources */,
 				BD73FBC1243CA43C00AE9D81 /* ProductSummaryResponse.swift in Sources */,
 				BD73FBCF243DD1C600AE9D81 /* TagGroup.swift in Sources */,
 				BD73FBB7243C52C300AE9D81 /* Box.swift in Sources */,

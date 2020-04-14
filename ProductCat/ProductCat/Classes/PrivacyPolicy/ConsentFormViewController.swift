@@ -19,7 +19,7 @@ open class ConsentFormViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        textViewContainer.layer.cornerRadius = 3.0
+        textViewContainer.layer.cornerRadius = ProductCatThemeConstants.cornerRadius
         
         descTextView.textContainerInset = .zero
         descTextView.textContainer.lineFragmentPadding = .zero
@@ -31,8 +31,8 @@ open class ConsentFormViewController: UIViewController, UITextViewDelegate {
         
         descTextView.delegate = self
         
-        acceptBtn.layer.cornerRadius = 3.0
-        acceptBtn.backgroundColor = UIColor(hexString: "#283d78")
+        acceptBtn.layer.cornerRadius = ProductCatThemeConstants.cornerRadius
+        acceptBtn.backgroundColor = ProductCatThemeConstants.btnPrimaryColor
         
     }
     
@@ -42,6 +42,16 @@ open class ConsentFormViewController: UIViewController, UITextViewDelegate {
     }
     
 
+    @IBAction func declineClick(_ sender: Any) {
+    
+    }
+    
+    
+    @IBAction func acceptClick(_ sender: Any) {
+    
+    }
+    
+    
     /*
     // MARK: - Navigation
 

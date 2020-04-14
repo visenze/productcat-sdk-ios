@@ -19,13 +19,13 @@ open class ProductRecommendationViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        textViewContainer.layer.cornerRadius = 3.0
+        textViewContainer.layer.cornerRadius = ProductCatThemeConstants.cornerRadius
         
         descTextView.textContainerInset = .zero
         descTextView.textContainer.lineFragmentPadding = .zero
                 
-        acceptBtn.layer.cornerRadius = 3.0
-        acceptBtn.backgroundColor = UIColor(hexString: "#283d78")
+        acceptBtn.layer.cornerRadius = ProductCatThemeConstants.cornerRadius
+        acceptBtn.backgroundColor = ProductCatThemeConstants.btnPrimaryColor
         
     }
     

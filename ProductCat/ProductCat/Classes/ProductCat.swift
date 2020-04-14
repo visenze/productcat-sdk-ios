@@ -63,6 +63,7 @@ open class ProductCat: NSObject {
         return nil
     }
     
+    /// Image Search
     @discardableResult public func imageSearch(
         params: ImageSearchParams,
         successHandler: @escaping ProductCatClient.SuccessSearchResultsHandler,
@@ -76,6 +77,7 @@ open class ProductCat: NSObject {
         return nil
     }
     
+    /// Get Search Results Page
     @discardableResult public func imageSearchResultPage(
         params: ImageSearchParams,
         successHandler: @escaping ProductCatClient.SuccessSearchResultsHandler,
