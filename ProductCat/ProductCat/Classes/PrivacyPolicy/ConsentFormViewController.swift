@@ -11,9 +11,11 @@ import UIKit
 protocol ConsentFormDelegate: class {
     func acceptTerms()
     func declineTerms()
+    func agreeRecommendation()
+    func disagreeRecommendation()
 }
 
-open class ConsentFormViewController: UIViewController, UITextViewDelegate {
+open class ConsentFormViewController: UIViewController, UITextViewDelegate, ProductRecommendationDelegate {
 
     weak var delegate: ConsentFormDelegate?
     
@@ -65,15 +67,28 @@ open class ConsentFormViewController: UIViewController, UITextViewDelegate {
         self.view.isHidden = true
     }
     
+    open func agreeRecommendation() {
+        self.dismiss(animated: true) {
+            self.delegate?.agreeRecommendation()
+        }
+    }
     
-    /*
+    open func disagreeRecommendation() {
+        self.dismiss(animated: true) {
+            self.delegate?.disagreeRecommendation()
+        }
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    open override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showRec" {
+            let recController = segue.destination as! ProductRecommendationViewController
+            recController.delegate = self
+            
+        }
     }
-    */
+    
 
 }

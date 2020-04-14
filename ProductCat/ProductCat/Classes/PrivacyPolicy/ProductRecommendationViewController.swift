@@ -8,12 +8,34 @@
 
 import UIKit
 
+protocol ProductRecommendationDelegate: class {
+    func agreeRecommendation()
+    func disagreeRecommendation()
+}
+
 open class ProductRecommendationViewController: UIViewController {
 
+    weak var delegate: ProductRecommendationDelegate?
+    
     @IBOutlet weak var descTextView: UITextView!
     @IBOutlet weak var textViewContainer: UIView!
     @IBOutlet weak var acceptBtn: UIButton!
     @IBOutlet weak var declineBtn: UIButton!
+    
+    
+    @IBAction func actionBtnClicked(_ sender: UIButton) {
+        
+        self.dismiss(animated: true) {
+            self.delegate?.agreeRecommendation()
+        }
+        
+    }
+    
+    @IBAction func declineBtnClicked(_ sender: UIButton) {
+        self.dismiss(animated: true) {
+            self.delegate?.disagreeRecommendation()
+        }
+    }
     
     open override func viewDidLoad() {
         super.viewDidLoad()

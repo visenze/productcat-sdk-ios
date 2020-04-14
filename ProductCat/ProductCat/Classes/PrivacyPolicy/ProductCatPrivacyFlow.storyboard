@@ -57,6 +57,9 @@ Do you agree to proceed?</string>
                                                 <state key="normal" title="Yes, I agree">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="actionBtnClicked:" destination="chp-tL-9nW" eventType="touchUpInside" id="Mpa-wv-AnY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTj-Hq-yaC" userLabel="declineBtn">
                                                 <rect key="frame" x="0.0" y="196" width="350" height="44"/>
@@ -67,6 +70,9 @@ Do you agree to proceed?</string>
                                                 <state key="normal" title="No">
                                                     <color key="titleColor" red="0.15686274509803921" green="0.23921568627450979" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="declineBtnClicked:" destination="chp-tL-9nW" eventType="touchUpInside" id="dC1-qM-w22"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -165,7 +171,7 @@ Terms of use
                                                 </state>
                                                 <connections>
                                                     <action selector="acceptClick:" destination="x0H-eM-U1J" eventType="touchUpInside" id="vzh-EL-asS"/>
-                                                    <segue destination="chp-tL-9nW" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="A6w-hT-sPu"/>
+                                                    <segue destination="chp-tL-9nW" kind="presentation" identifier="showRec" modalPresentationStyle="overCurrentContext" id="A6w-hT-sPu"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFg-9u-z4b" userLabel="declineBtn">
