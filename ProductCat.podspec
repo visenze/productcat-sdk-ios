@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   
   s.name         = "ProductCat"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "ProductCat API"
 
   s.description  = <<-DESC
@@ -31,6 +31,8 @@ Pod::Spec.new do |s|
 
 
   s.source_files  = "ProductCat/ProductCat/**/*.{h,swift}"
+  s.resources  = ["ProductCat/ProductCat/Classes/PrivacyPolicy/ProductCatPrivacyFlow.storyboard"]
+  
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
