@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ProductRecommendationDelegate: class {
+public protocol ProductRecommendationDelegate: class {
     func agreeRecommendation()
     func disagreeRecommendation()
 }

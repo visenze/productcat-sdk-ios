@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ConsentFormDelegate: class {
+public protocol ConsentFormDelegate: class {
     func acceptTerms()
     func declineTerms()
     func agreeRecommendation()

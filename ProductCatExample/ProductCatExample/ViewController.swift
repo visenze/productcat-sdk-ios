@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showConsentForm(_ sender: Any) {
-        ProductCat.sharedInstance.showConsentForm()
+        ProductCat.sharedInstance.showConsentForm(nil)
         
     }
     
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
                          failureHandler: {
                               (err) -> Void in
                               // Do something when request fails e.g. due to network error
-                              print ("error: \\(err.localizedDescription)")
+                            print ("error: \(err)")
                           })
         
     }

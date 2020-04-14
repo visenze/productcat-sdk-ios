@@ -45,8 +45,8 @@ open class ProductCat: NSObject {
     
     // MARK: API calls
     
-    public func showConsentForm() {
-        client?.showConsentForm()
+    public func showConsentForm(_ delegate: ConsentFormDelegate?) {
+        client?.showConsentForm(delegate)
     }
     
     /// Text Search

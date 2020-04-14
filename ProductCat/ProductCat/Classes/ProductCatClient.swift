@@ -26,6 +26,9 @@ public enum APIMethod: String {
     case VISUAL_RECOGNIZE = "visual/recognize"
 }
 
+public enum ProductCatError: Error {
+    case TERMS_NOT_ACCEPTED
+}
 
 open class ProductCatClient: NSObject, URLSessionDelegate {
     public static let DEFAULT_ENDPOINT = "https://productcat.visenze.com"
@@ -100,7 +103,7 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
     
     // MARK: APIs
     
-    public func showConsentForm() {
+    public func showConsentForm(_ delegate: ConsentFormDelegate?) {
         if var topController = UIApplication.shared.keyWindow?.rootViewController {
             while let presentedViewController = topController.presentedViewController {
                 topController = presentedViewController
@@ -111,6 +114,11 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
             let consentFormAlert = storyboard.instantiateViewController(withIdentifier: "consentForm")
             consentFormAlert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             consentFormAlert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+            
+            if let controller = consentFormAlert as? ConsentFormViewController {
+                controller.delegate = delegate
+            }
+            
             topController.present(consentFormAlert, animated: true, completion: nil)
         }
     }
@@ -118,8 +126,9 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
     public func textSearch(params: TextSearchParams,
                             successHandler: @escaping SuccessSearchResultsHandler,
                             failureHandler: @escaping FailureHandler
-        ) -> URLSessionTask
+        ) -> URLSessionTask?
     {
+       
         return makeGetApiRequest(params: params,
                                  apiMethod: .PRODUCT_SEARCH,
                                  successHandler: {
@@ -133,9 +142,9 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
     @discardableResult public func imageSearch(
          params: ImageSearchParams,
          successHandler: @escaping SuccessSearchResultsHandler,
-         failureHandler: @escaping FailureHandler) -> URLSessionTask
+         failureHandler: @escaping FailureHandler) -> URLSessionTask?
     {
-        
+      
         let request = self.buildSearchPostRequest(params: params, apiMethod: .PRODUCT_SEARCH)
         
         return httpPost(apiMethod: .PRODUCT_SEARCH,
@@ -150,7 +159,7 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
     @discardableResult public func imageSearchResultsPage(
          params: ImageSearchParams,
          successHandler: @escaping SuccessSearchResultsHandler,
-         failureHandler: @escaping FailureHandler) -> URLSessionTask
+         failureHandler: @escaping FailureHandler) -> URLSessionTask?
     {
         
         let request = self.buildSearchPostRequest(params: params, apiMethod: .SRP)
@@ -163,6 +172,7 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
                         },
                         failureHandler: failureHandler )
     }
+    
     
     private func buildSearchPostRequest(params: ImageSearchParams, apiMethod: APIMethod) -> NSMutableURLRequest {
         
@@ -191,7 +201,7 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
                                    apiMethod: APIMethod,
                                    successHandler: @escaping SuccessHandler,
                                    failureHandler: @escaping FailureHandler
-        ) -> URLSessionTask{
+        ) -> URLSessionTask? {
         self.trackDevice(params)
         
         let url = requestSerialization.generateRequestUrl(baseUrl: baseUrl, apiMethod: apiMethod , searchParams: params, appKey: self.appKey)
@@ -215,9 +225,13 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
         
         // set uid
         params.uid = UidHelper.uniqueDeviceUid()
-        
+       
         // set idfa if available
         self.trackIdfa(params)
+        
+        if let acceptAds = SettingHelper.isAcceptedVisenzeAds() {
+            params.doNotTrack = !acceptAds
+        }
     }
     
     // idfa collection
@@ -240,7 +254,7 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
                          apiMethod: APIMethod,
                          request: NSMutableURLRequest,
                          successHandler: @escaping SuccessHandler,
-                         failureHandler: @escaping FailureHandler) -> URLSessionTask
+                         failureHandler: @escaping FailureHandler) -> URLSessionTask?
     {
         return httpRequest(apiMethod: apiMethod, method: ViHttpMethod.GET, request: request, successHandler: successHandler, failureHandler: failureHandler)
     }
@@ -249,7 +263,7 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
                          apiMethod: APIMethod,
                          request: NSMutableURLRequest,
                          successHandler: @escaping SuccessHandler,
-                         failureHandler: @escaping FailureHandler) -> URLSessionTask
+                         failureHandler: @escaping FailureHandler) -> URLSessionTask?
     {
         return httpRequest(apiMethod: apiMethod, method: ViHttpMethod.POST, request: request, successHandler: successHandler, failureHandler: failureHandler)
     }
@@ -259,7 +273,12 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
                  method: ViHttpMethod,
                  request: NSMutableURLRequest,
                  successHandler: @escaping SuccessHandler,
-                 failureHandler: @escaping FailureHandler) -> URLSessionTask {
+                 failureHandler: @escaping FailureHandler) -> URLSessionTask? {
+        
+        if (!checkAcceptTerms()) {
+            failureHandler(ProductCatError.TERMS_NOT_ACCEPTED)
+            return nil
+        }
         
         request.httpMethod = method.rawValue
         let task = createSessionTaskWithRequest(apiMethod: apiMethod, request: request, successHandler: successHandler, failureHandler: failureHandler)
@@ -268,6 +287,7 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
         return task
     }
     
+
     /**
      *  create data task session for request
      *
@@ -308,5 +328,13 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
         return task
     }
     
-    
+    private func checkAcceptTerms() -> Bool {
+       if let acceptTerms = SettingHelper.isAcceptedVisenzeTerms() {
+            return acceptTerms
+       }
+       
+       // show form if never show before
+       self.showConsentForm(nil)
+       return false
+    }
 }
