@@ -24,6 +24,7 @@ open class ProductRecommendationViewController: UIViewController {
     
     
     @IBAction func actionBtnClicked(_ sender: UIButton) {
+        SettingHelper.setAcceptedViSenzeAds(true)
         
         self.dismiss(animated: true) {
             self.delegate?.agreeRecommendation()
@@ -32,6 +33,8 @@ open class ProductRecommendationViewController: UIViewController {
     }
     
     @IBAction func declineBtnClicked(_ sender: UIButton) {
+        SettingHelper.setAcceptedViSenzeAds(false)
+        
         self.dismiss(animated: true) {
             self.delegate?.disagreeRecommendation()
         }

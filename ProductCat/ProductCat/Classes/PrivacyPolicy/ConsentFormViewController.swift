@@ -52,6 +52,7 @@ open class ConsentFormViewController: UIViewController, UITextViewDelegate, Prod
     
 
     @IBAction func declineClick(_ sender: Any) {
+        SettingHelper.setAcceptedViSenzeTerms(false)
         
         self.dismiss(animated: true) {
             self.delegate?.declineTerms()
@@ -64,6 +65,7 @@ open class ConsentFormViewController: UIViewController, UITextViewDelegate, Prod
         
         // move to product recommendation
         self.delegate?.acceptTerms()
+        SettingHelper.setAcceptedViSenzeTerms(true)
         self.view.isHidden = true
     }
     

@@ -10,6 +10,35 @@ import Foundation
 
 // store settings
 public class SettingHelper {
+    private static let ACCEPT_VISENZE_TERMS = "accept_vs_terms"
+    private static let ACCEPT_VISENZE_ADS = "accept_vs_ads"
+    
+    
+    public static func isAcceptedVisenzeAds() -> Bool? {
+        return SettingHelper.getBoolSettingProp(propName: ACCEPT_VISENZE_ADS)
+    }
+    
+    public static func setAcceptedViSenzeAds(_ newValue: Bool) {
+        self.setBoolSettingProp(propName: ACCEPT_VISENZE_ADS, newValue: newValue)
+    }
+    
+    public static func isAcceptedVisenzeTerms() -> Bool? {
+        return SettingHelper.getBoolSettingProp(propName: ACCEPT_VISENZE_TERMS)
+    }
+    
+    public static func setAcceptedViSenzeTerms(_ newValue: Bool) {
+        self.setBoolSettingProp(propName: ACCEPT_VISENZE_TERMS, newValue: newValue)
+    }
+    
+    public static func setBoolSettingProp(propName: String , newValue: Bool) -> Void {
+        let userDefault = UserDefaults.standard
+        userDefault.set(newValue, forKey: propName)
+    }
+    
+    public static func getBoolSettingProp (propName: String) -> Bool? {
+       let userDefault = UserDefaults.standard
+       return userDefault.bool(forKey: propName)
+    }
     
     /// Set a property , store in userDefault
     ///
