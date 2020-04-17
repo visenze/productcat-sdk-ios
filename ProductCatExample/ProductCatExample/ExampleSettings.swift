@@ -11,9 +11,36 @@ import UIKit
 class ExampleSettings: NSObject {
     private static let countryKey : String = "country"
     private static let resultPerPageKey : String = "resultPerPage"
+    private static let preferBrowserKey : String = "preferBrowser"
     
     
     public static let RESULTS_PER_PAGE_LIST : [Int] = [10, 20, 30, 50, 100]
+    public static let builtinBrowser = "Builtin"
+    
+    public static let BROWSERS_SCHEMES = [
+        builtinBrowser : "",
+        "Default" : "http://",
+        "Google Chrome" : "googlechrome://",
+        "Opera" : "opera://",
+        "Firefox" : "firefox://",
+        "Dolphin" : "dolphin://",
+        "UC Browser" : "ucbrowser://",
+    ]
+    
+    public static let BROWSERS = [builtinBrowser, "Default" , "Google Chrome", "Opera", "Firefox", "Dolphin", "UC Browser"]
+    
+    public class func setPreferBrowser(_ browser: String) {
+        UserDefaults.standard.set(browser, forKey: preferBrowserKey)
+    }
+    
+    public class func getPrefBrowser() -> String {
+        let result =  UserDefaults.standard.string(forKey: preferBrowserKey)
+        if result == nil || result?.count == 0 {
+            return builtinBrowser
+        }
+        
+        return result!
+    }
     
     public class func setCountry(_ countryCode: String) {
         UserDefaults.standard.set(countryCode, forKey: countryKey)

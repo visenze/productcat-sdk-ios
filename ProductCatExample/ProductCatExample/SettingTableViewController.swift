@@ -64,9 +64,11 @@ class SettingTableViewController: UITableViewController {
         } else if (items[indexPath.row] == SettingTableViewController.resultPerPageString) {
             let storedResultPerPage = String(ExampleSettings.getResultPerPage())
             cell?.detailTextLabel?.text = storedResultPerPage
+        } else if (items[indexPath.row] == SettingTableViewController.browserString) {
+            let browserVal = ExampleSettings.getPrefBrowser()
+            cell?.detailTextLabel?.text = browserVal
         }
         
-
         return cell!
     }
     
@@ -108,6 +110,28 @@ class SettingTableViewController: UITableViewController {
             
             for i in 0 ..< ExampleSettings.RESULTS_PER_PAGE_LIST.count {
                 alert.addAction(UIAlertAction(title: String(ExampleSettings.RESULTS_PER_PAGE_LIST[i]), style: .default, handler: closure))
+            }
+            
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel , handler: { (_) in
+                self.tableView.reloadData()
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
+        }
+        else if items[indexPath.row] == SettingTableViewController.browserString {
+            
+            let alert = UIAlertController(title: "Select", message: nil, preferredStyle: .actionSheet)
+            
+            let closure = { (action: UIAlertAction!) -> Void in
+                
+                if let index = alert.actions.firstIndex(of: action) {
+                    ExampleSettings.setPreferBrowser(ExampleSettings.BROWSERS[index])
+                    self.tableView.reloadData()
+                }
+            }
+            
+            for i in 0 ..< ExampleSettings.BROWSERS.count {
+                alert.addAction(UIAlertAction(title: ExampleSettings.BROWSERS[i], style: .default, handler: closure))
             }
             
             alert.addAction(UIAlertAction(title: "Cancel", style: .cancel , handler: { (_) in

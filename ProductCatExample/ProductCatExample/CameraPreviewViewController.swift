@@ -72,10 +72,8 @@ class CameraPreviewViewController: UIViewController, SFSafariViewControllerDeleg
                                                 // open browser
                                                 if let searchResultsUrl = data.srpUrl, let url = URL(string: searchResultsUrl) {
                                                     
-                                                    let vc = SFSafariViewController(url: url, entersReaderIfAvailable: false)
-                                                    vc.delegate = self
-
-                                                    self.present(vc, animated: true)
+                                                    self.openBrowser(searchResultsUrl, url)
+                                                    
                                                 } else {
                                                     self.alert(message: "Search Results URL is missing!", title: "Error")
                                                 }
@@ -100,6 +98,32 @@ class CameraPreviewViewController: UIViewController, SFSafariViewControllerDeleg
                               })
         }
     }
+    
+    fileprivate func openBrowser(_ searchResultsUrl: String, _ url: URL) {
+            let preferBrowser = ExampleSettings.getPrefBrowser()
+           
+            if preferBrowser == ExampleSettings.builtinBrowser {
+               let vc = SFSafariViewController(url: url, entersReaderIfAvailable: false)
+               vc.delegate = self
+               self.present(vc, animated: true)
+               return
+            }
+        
+            // get the custom scheme
+            if let scheme = ExampleSettings.BROWSERS_SCHEMES[preferBrowser] {
+                var newSchemeURl = searchResultsUrl.replacingOccurrences(of: "https://", with: scheme)
+                newSchemeURl = searchResultsUrl.replacingOccurrences(of: "http://", with: scheme)
+                let schemeUrl = NSURL(string: newSchemeURl) as! URL
+                
+                if UIApplication.shared.canOpenURL(schemeUrl) {
+                    UIApplication.shared.openURL(schemeUrl)
+                } else {
+                    alert(message: "This browser might not be available. Please download from AppStore.", title: "Error")
+                }
+                
+            }
+          
+       }
     
     func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
         dismiss(animated: true)
@@ -150,15 +174,5 @@ class CameraPreviewViewController: UIViewController, SFSafariViewControllerDeleg
         self.present(alertController, animated: true, completion: nil)
     }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
