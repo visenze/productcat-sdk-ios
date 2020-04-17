@@ -16,26 +16,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UT3-ni-PyD">
-                                <rect key="frame" x="149.5" y="433" width="115" height="30"/>
+                                <rect key="frame" x="149.5" y="426" width="115" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ktl-B8-y2n"/>
+                                </constraints>
                                 <state key="normal" title="Search by Image"/>
                                 <connections>
                                     <segue destination="ckY-Fe-Wnr" kind="show" id="tX3-39-ewp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xax-y2-1HA">
-                                <rect key="frame" x="137.5" y="477" width="139" height="30"/>
+                                <rect key="frame" x="137.5" y="490" width="139" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="LFA-D5-jgT"/>
+                                </constraints>
                                 <state key="normal" title="Show Consent Form"/>
                                 <connections>
                                     <action selector="showConsentForm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d4L-lp-VST"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0R-jA-8nG">
+                                <rect key="frame" x="178.5" y="362" width="57" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="joX-Ma-cIg"/>
+                                </constraints>
+                                <state key="normal" title="Settings"/>
+                                <connections>
+                                    <action selector="showSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uGY-6C-qhh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="R0R-jA-8nG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R1n-1e-SVZ"/>
+                            <constraint firstItem="R0R-jA-8nG" firstAttribute="bottom" secondItem="UT3-ni-PyD" secondAttribute="top" constant="-20" id="aOh-AT-dZZ"/>
                             <constraint firstItem="UT3-ni-PyD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b4P-Ji-zfD"/>
                             <constraint firstItem="Xax-y2-1HA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c9z-Wf-HiN"/>
                             <constraint firstItem="UT3-ni-PyD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iEj-Rd-Ntp"/>
-                            <constraint firstItem="Xax-y2-1HA" firstAttribute="top" secondItem="UT3-ni-PyD" secondAttribute="top" constant="44" id="tz0-Wq-m87"/>
+                            <constraint firstItem="Xax-y2-1HA" firstAttribute="top" secondItem="UT3-ni-PyD" secondAttribute="bottom" constant="20" id="tz0-Wq-m87"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

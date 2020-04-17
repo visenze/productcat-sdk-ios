@@ -27,10 +27,20 @@ class CameraPreviewViewController: UIViewController, SFSafariViewControllerDeleg
             
             self.showHud()
             
+            let country = ExampleSettings.getCountry() ?? "SG"
+            
             let imgSearchParams = ImageSearchParams(
-                country: ProductCat.sharedInstance.client!.country ,
+                country: country ,
                 image: img
             )
+            
+            imgSearchParams.limit = ExampleSettings.getResultPerPage()
+            
+            if country == "CN" {
+                ProductCat.sharedInstance.client?.baseUrl = ProductCatClient.DEFAULT_CN_ENDPOINT
+            } else {
+                ProductCat.sharedInstance.client?.baseUrl = ProductCatClient.DEFAULT_ENDPOINT
+            }
             
             ProductCat.sharedInstance.imageSearchResultPage(params: imgSearchParams,
                                                   successHandler: {

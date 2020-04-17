@@ -17,6 +17,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func showSettings(_ sender: Any) {
+        let tableController = SettingTableViewController(style: .grouped)
+        self.navigationController?.pushViewController(tableController, animated: true)
+    }
+    
     @IBAction func showConsentForm(_ sender: Any) {
         ProductCat.sharedInstance.showConsentForm(nil)
     }
