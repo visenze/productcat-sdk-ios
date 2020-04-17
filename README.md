@@ -19,7 +19,7 @@
     - 4.2 [Search Results API](#42-search-results-api)
     - 4.3 [Text Search](#43-text-search)
  5. [Search Results](#5-search-results)
- 6. [Data Privacy Flow](#5-data-privacy-flow)
+ 6. [Data Privacy Flow](#6-data-privacy-flow)
  
 
 ---
@@ -339,5 +339,50 @@ Below are the properties of a **ProductSummary** represents a product.
 
 
 ## 6. Data Privacy Flow
+
+To analyze search performance and usage statistics (such as Click Through Rate, Active Users, Conversion Tracking, Retention Rate, etc), ProductCat SDK use `UIDevice.current.identifierForVendor?.uuidString` together with `IDFA` (from `AdSupport.framework`) to uniquely identify a user. Based on user's usage statistics, Visenze will push customized seach results and advertising products according to user's preference.  
+
+Please note that end-users need to:
+
+- Accept Visenze'ss Privacy Policy & Terms of Use in order to use our service
+- (Optionally) Accept advertisement terms to receive special offers, promotions information and product recommendations
+
+ProductCat SDK will show user the "Terms and Conditions" dialog for the first time usage. Users need to accept the terms and conditions before using the APIs. If users do not accept the terms, the SDK will throw an error in its callback, it is up to the developer on whether to show up the consent form again or quit the service.
+
+```
+
+// error will be shown via failureHandler callback (ProductCatError.TERMS_NOT_ACCEPTED)
+
+ProductCat.sharedInstance.imageSearch(params: params,
+                    successHandler: {
+                        
+                    },
+                    failureHandler: {
+                        (err) -> Void in
+                        
+                        if (err == ProductCatError. ProductCatError.TERMS_NOT_ACCEPTED) {
+                        
+                        // show terms again
+                        ProductCat.sharedInstance.showConsentForm(nil)
+                        
+                        }
+					})
+
+
+```
+
+You can show the consent form and check whether user has accepted ViSenze terms using the following methods:
+
+```
+// show the form
+ProductCat.sharedInstance.showConsentForm()
+
+// check if user accept or reject the terms
+ProductCat.sharedInstance.isAcceptedVisenzeTerms()
+                                               
+                        
+```
+
+
 
 
