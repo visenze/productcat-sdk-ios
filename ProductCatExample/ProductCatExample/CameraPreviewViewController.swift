@@ -112,7 +112,8 @@ class CameraPreviewViewController: UIViewController, SFSafariViewControllerDeleg
             // get the custom scheme
             if let scheme = ExampleSettings.BROWSERS_SCHEMES[preferBrowser] {
                 var newSchemeURl = searchResultsUrl.replacingOccurrences(of: "https://", with: scheme)
-                newSchemeURl = searchResultsUrl.replacingOccurrences(of: "http://", with: scheme)
+                newSchemeURl = newSchemeURl.replacingOccurrences(of: "http://", with: scheme)
+                print (newSchemeURl)
                 let schemeUrl = NSURL(string: newSchemeURl) as! URL
                 
                 if UIApplication.shared.canOpenURL(schemeUrl) {

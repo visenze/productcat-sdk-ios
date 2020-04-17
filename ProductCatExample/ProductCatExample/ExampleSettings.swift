@@ -21,13 +21,11 @@ class ExampleSettings: NSObject {
         builtinBrowser : "",
         "Default" : "http://",
         "Google Chrome" : "googlechrome://",
-        "Opera" : "opera://",
-        "Firefox" : "firefox://",
         "Dolphin" : "dolphin://",
         "UC Browser" : "ucbrowser://",
     ]
     
-    public static let BROWSERS = [builtinBrowser, "Default" , "Google Chrome", "Opera", "Firefox", "Dolphin", "UC Browser"]
+    public static let BROWSERS = [builtinBrowser, "Default" , "Google Chrome", "Dolphin", "UC Browser"]
     
     public class func setPreferBrowser(_ browser: String) {
         UserDefaults.standard.set(browser, forKey: preferBrowserKey)
