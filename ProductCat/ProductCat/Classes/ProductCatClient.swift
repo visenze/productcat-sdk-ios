@@ -102,6 +102,13 @@ open class ProductCatClient: NSObject, URLSessionDelegate {
     }
     
     // MARK: APIs
+    public func isAcceptedVisenzeAds() -> Bool? {
+        return SettingHelper.isAcceptedVisenzeAds()
+    }
+    
+    public func isAcceptedVisenzeTerms() -> Bool? {
+        return SettingHelper.isAcceptedVisenzeTerms()
+    }
     
     public func showConsentForm(_ delegate: ConsentFormDelegate?) {
         if var topController = UIApplication.shared.keyWindow?.rootViewController {

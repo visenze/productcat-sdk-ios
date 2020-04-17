@@ -44,6 +44,13 @@ open class ProductCat: NSObject {
     }
     
     // MARK: API calls
+    public func isAcceptedVisenzeAds() -> Bool? {
+        return client?.isAcceptedVisenzeAds()
+    }
+    
+    public func isAcceptedVisenzeTerms() -> Bool? {
+        return client?.isAcceptedVisenzeTerms()
+    }
     
     public func showConsentForm(_ delegate: ConsentFormDelegate?) {
         client?.showConsentForm(delegate)
