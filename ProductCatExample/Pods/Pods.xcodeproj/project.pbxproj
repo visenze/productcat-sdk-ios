@@ -1,0 +1,1745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		023483EF6721F8033AAC6FA4509B0105 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214EA8B3A66819757A44D19E9741E8C8 /* PermissionsView.swift */; };
+		03573D54D735755FCC7832A960D54914 /* Pods-ProductCatExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A9119B54782D26FC2929DFF88C09251 /* Pods-ProductCatExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07D3BAAB9F1D7BA4825DBF8150F78E87 /* CameraView.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC51B0EDF4A320BDE69324AB66A43D8C /* CameraView.strings */; };
+		0C1C728998AB799AC244F7ED9BA4B1BB /* CGImageSource+ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A729BE30A823E91034F33B34EC1899 /* CGImageSource+ImageLoader.swift */; };
+		0DEB889CADE5473AB140BDB336B66E78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D597B11E4419A4E3406748089ADC2CF /* Foundation.framework */; };
+		0ECC1E5004C894600FA8A271B66DEDE6 /* SingleImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56895768954EC8A9737368E86D93510 /* SingleImageFetcher.swift */; };
+		1140ED5D4474F84751637FFA17351341 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C6DFC8A71DEEF0F1C09EF542E3410B /* ConfirmViewController.swift */; };
+		1502C3B5730D80705F0F29615F0DBC1D /* UIImageView+ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053CD79AF7EEF7DD9D72E35FBF1B87FE /* UIImageView+ImageLoader.swift */; };
+		168D399EF67DF93D60B6E5C2D36DFDB4 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9F14DCFAF01012C0C620522EB5DB1B /* Option.swift */; };
+		17D127410C33EFA57783E119AE6331FF /* VolumeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D943EAEB3803D4E9972081EEF1EF052 /* VolumeControl.swift */; };
+		1C26BD6F12ADF390CC5EF342891F5BDC /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC831FCDAEAA9C29B71F5758C008694 /* ImageCell.swift */; };
+		22068882F9F79FACADE8B6C5D3AB50C2 /* URLLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9818794749E86371AECC116108CB8 /* URLLiteralConvertible.swift */; };
+		2764E53847A07485C74C4940F35CC844 /* Operative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6A04D6705A1F0C4DE158A529903240 /* Operative.swift */; };
+		2934478BDB6C711E6313B9E9B712716C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AA28D224539371C3B8AF5572A944E9 /* CameraView.swift */; };
+		29DECE041019CE945AAA17EEDB1B3FDB /* CameraViewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47ED8BEC641889427EB6B21D0DDB5E66 /* CameraViewAssets.xcassets */; };
+		2B387CDEA424D774B669A08EF29299AD /* PhotoLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AACEC9423F5D3FB60199E7ED2CAB6E /* PhotoLibraryViewController.swift */; };
+		2C2BC7EE0BE778C040C5CDE3085C53E0 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0285B0A52948BB5A770A12671CB8204E /* ImageFetcher.swift */; };
+		40B948B85F9DD18926F8CE71FE12EF9E /* ALCameraViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88A67D52EF12D339157A555345CBDEBF /* ALCameraViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A2D8E4BA4222581DB30A8693DD38882 /* KRActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E3876689004C135D68E44A407A2ABC /* KRActivityIndicatorView-dummy.m */; };
+		5165DB589723210842E210269D050751 /* CroppingParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D39F2C723EB0D1B2B1155E9AFDD99 /* CroppingParameters.swift */; };
+		5297FB710F7BEA76F77C7E7C5556B8BD /* Pods-ProductCatExample-ProductCatExampleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E966DAF3A685236E184CD904F0B50A4 /* Pods-ProductCatExample-ProductCatExampleUITests-dummy.m */; };
+		52AD203B355EF3F073B5B78096E93512 /* Pods-ProductCatExample-ProductCatExampleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EACB4656F882E58A548A0C71AE92879 /* Pods-ProductCatExample-ProductCatExampleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5500C9BC537B56AAB9BC0431CB18ADD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D597B11E4419A4E3406748089ADC2CF /* Foundation.framework */; };
+		5CECB957C537B7D9CCD41FDA0FBF645C /* HashStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C6212F68E7614DD0832229EEDDDF43 /* HashStorage.swift */; };
+		5CFACF382D9204F792CB6C931E207DFB /* CameraGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1B72A4C61FBA9E3AE3D5991EF8DA99 /* CameraGlobals.swift */; };
+		6175AF685E0002FAA4CC678BE48A8C10 /* KRProgressHUDIconType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEA7EF3E9FFA74C443E54474B64EB3 /* KRProgressHUDIconType.swift */; };
+		6E862CC41FC47997D7371636D5B14F0D /* ImageLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D02316D5936A14BC3A2FB10C605AFD9 /* ImageLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71B31EDCC1ACA87CD0B5A8EDACDF1D03 /* KRProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A263595BF06FFD1401F9912EF22344A1 /* KRProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79918DC57AAD81CF4570747D947D834E /* CropOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B31E27D8917E4574EC20F763F02692 /* CropOverlay.swift */; };
+		7B7E89CD84751B5C6682A047F483205A /* CameraShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2697EE7D526DE2BE1AC1B6AA1107D9D5 /* CameraShot.swift */; };
+		82C29EC20120B3EEF6B867F8B0A7B5AB /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAFBD6B0BFD2BD7040B22634DAF76D7 /* UIButtonExtensions.swift */; };
+		852DD6324AC6921FD301D4E58A9EC5E0 /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77C16B1FF390E9E61EC3D8321FCB35C /* Disk.swift */; };
+		854FA63BFE263E6D5ED8DDAAC20206CD /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D45824CB5A8A466B391FE10BE9817 /* UIViewExtensions.swift */; };
+		8691040C4144FF67AF097D34E7B4075A /* KRActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEF8594355AE2E254A04BF34041BD29 /* KRActivityIndicatorView.swift */; };
+		86F95728A271884544EA8E5BE4C813DB /* CameraViewControllerConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B04A4C1986D6055894FEB8EF266431 /* CameraViewControllerConstraint.swift */; };
+		8BA8801CA92679EA832FA6D41B1ECECB /* PhotoLibraryAuthorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E7822B79CFE3E9F2EE71FE2C096E65 /* PhotoLibraryAuthorizer.swift */; };
+		8F965F0161EB81C4C8228D10EDF56453 /* KRActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB6C79120AE9FD68E51C5CB2434ECA8C /* KRActivityIndicatorView.framework */; };
+		91E889574F0FC4430BDF7CA91CCF6DBE /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DBF903C07FE62E3CC123126CD3D9C1 /* Loader.swift */; };
+		96D8204B3A36D243904EE9F04BE29ADD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D597B11E4419A4E3406748089ADC2CF /* Foundation.framework */; };
+		98CC7BEAD7F982A0978939D804818C72 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D50BF2F790186E099A3FD03351F8DA /* Extensions.swift */; };
+		9C8A12E79E63AA73FC25D6D536DDA89A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D597B11E4419A4E3406748089ADC2CF /* Foundation.framework */; };
+		9E537C830DF2092EDEBCC9EB5E2B38C7 /* Pods-ProductCatExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E09E1843CF721A7C8DAEDCCB5DD632 /* Pods-ProductCatExampleTests-dummy.m */; };
+		9E774B2C215F27698B2EB1CFE441C8D7 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7182CB6385385E64864945A5E88C6A76 /* ImageLoader.swift */; };
+		AD8B47A2AA1ADD2A24DE172D30F3999C /* ALCameraViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A859E11BA958EE7BA793536AC25C73EE /* ALCameraViewController-dummy.m */; };
+		ADF8489E09D0D4C4BF03C96DF95E2C75 /* ConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7640A188CD51B5A37EC0284A901C1B09 /* ConfirmViewController.xib */; };
+		B08BE67E2FAACEB75B2642DEA72EBAEC /* KRActivityIndicatorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62AFABE4E7215C104570C7329DDD343F /* KRActivityIndicatorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B37781C0DE8D911C50AF395D0D7A66C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D597B11E4419A4E3406748089ADC2CF /* Foundation.framework */; };
+		B9B183E2408CDA0C82B7CC2045B5856E /* UIImage+ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267C787DA804FDB7824E2904022F7DDD /* UIImage+ImageLoader.swift */; };
+		BDF1477984864423290760EB72C6A023 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730E1FD2AAEA74E7620470357F2B82EA /* CameraViewController.swift */; };
+		C1295E98EFFD9626E5D50D96EF9E14BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D597B11E4419A4E3406748089ADC2CF /* Foundation.framework */; };
+		C1DCAFA78F691AB24596519966694BD3 /* Data+ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59712EA8B73AFE142F1C847FAEE22D3 /* Data+ImageLoader.swift */; };
+		C218FE5D841254675FA809C980579D18 /* KRProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC499D7BD8047B09F630C4DAA0860F3 /* KRProgressHUD-dummy.m */; };
+		C4A7121FFDE59153BE08375B7260C1C6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A5F40A086DC6A684D83321C2A4F7E2 /* Utilities.swift */; };
+		C6B9E476D455F0021E667A45A29A1C92 /* Pods-ProductCatExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A0B4A3803B142DEFFDA278A828C5F8 /* Pods-ProductCatExample-dummy.m */; };
+		D0A665A78DA17DC6D4E13883245CAA3C /* InnerKRProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E572CE090A1C8FC30A02EFFB3FD52588 /* InnerKRProgressHUD.swift */; };
+		D91C88E05B479FE84073AE817371F76E /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F78A912225EF62632DD5D8567C0A5C3 /* Loadable.swift */; };
+		D98EB3C499308BA57D37D2A21157F1A2 /* SingleImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647669939B79B031D1F06188469BCC80 /* SingleImageSaver.swift */; };
+		DBA00C6A264C2E09CA73D144B38CB16A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE369ADE1AE225F0CE6A595065533E58 /* Extensions.swift */; };
+		EC070297716F78F774EA722F417DD787 /* KRProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D48BEBD21689CCDBDEF1F5084350731 /* KRProgressHUD.swift */; };
+		F18FCAB8BC039DC8AC34B752FD1D7A42 /* KRProgressHUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1648475AE18FAD163C9598DB2F215B /* KRProgressHUDViewController.swift */; };
+		F4818ABB92605CEA8C220E30691837FE /* Pods-ProductCatExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E88696062BE39442A01966EAE8C8564 /* Pods-ProductCatExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F540EA9C871F750BEC5E1E3DBE654D93 /* ImageLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDB22FC8DBD7AFE5FAD6DB88BBCA198 /* ImageLoader-dummy.m */; };
+		F64EAB10BAE213A7034C70C8CCAE2B44 /* KRActivityIndicatorViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6B37F16A1D383BC47A6626A3CAFC5 /* KRActivityIndicatorViewStyle.swift */; };
+		FBB83C680FAEDBE0DBD8D56693A837BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D597B11E4419A4E3406748089ADC2CF /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06216CBE5EB300246850611FE7052EB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D151B72D5CE9336C8AD8927D077A295;
+			remoteInfo = ALCameraViewController;
+		};
+		285F011D3E13F9714FA5BF01B7EAE56B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D151B72D5CE9336C8AD8927D077A295;
+			remoteInfo = ALCameraViewController;
+		};
+		44EBAB1EA87F35CEDDC1C38008ADFD8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F7A1E5A05AF87570E2873C5F725E2CB;
+			remoteInfo = KRActivityIndicatorView;
+		};
+		531138F5859A87F98D39FEC020A16EFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA4681533D6AA601F9C9E2A116B7472C;
+			remoteInfo = KRProgressHUD;
+		};
+		5F3A5DC7A94FF5FE690FD26A901C570F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F7A1E5A05AF87570E2873C5F725E2CB;
+			remoteInfo = KRActivityIndicatorView;
+		};
+		71C56158481F59F5D50AE792B10A3216 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 269D828BFEDDD2E14A9BC55D5D392757;
+			remoteInfo = ImageLoader;
+		};
+		762B4985EEB1C0E4D125DE59D2FE50E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA4681533D6AA601F9C9E2A116B7472C;
+			remoteInfo = KRProgressHUD;
+		};
+		8CE65826E30C702E00FF724B7336D640 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F7A1E5A05AF87570E2873C5F725E2CB;
+			remoteInfo = KRActivityIndicatorView;
+		};
+		90668A54BCE5375DAE8B241E6D88915F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 269D828BFEDDD2E14A9BC55D5D392757;
+			remoteInfo = ImageLoader;
+		};
+		DAFCD1A14765D76DE3D42503CC1B3805 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF8CCC25B6E488AE636F6FD221BA5BE8;
+			remoteInfo = "Pods-ProductCatExample";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01A302BFF115F406BEB9CD3F3A133C25 /* Pods-ProductCatExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProductCatExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0285B0A52948BB5A770A12671CB8204E /* ImageFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFetcher.swift; path = ALCameraViewController/Utilities/ImageFetcher.swift; sourceTree = "<group>"; };
+		053CD79AF7EEF7DD9D72E35FBF1B87FE /* UIImageView+ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+ImageLoader.swift"; path = "ImageLoader/Extension/UIImageView+ImageLoader.swift"; sourceTree = "<group>"; };
+		072D6A4C5583F1289D59FC5160095A0A /* Pods-ProductCatExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProductCatExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		08AACEC9423F5D3FB60199E7ED2CAB6E /* PhotoLibraryViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoLibraryViewController.swift; path = ALCameraViewController/ViewController/PhotoLibraryViewController.swift; sourceTree = "<group>"; };
+		0C96BB3F2B3DAB1A5385150C736A5A36 /* Pods-ProductCatExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProductCatExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F288E773EFAB55EB5919BDA6E63E075 /* ALCameraViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ALCameraViewController-Info.plist"; sourceTree = "<group>"; };
+		13E79418C2CC623DFC608FBF9C73788B /* Pods-ProductCatExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProductCatExample.debug.xcconfig"; sourceTree = "<group>"; };
+		14E435DA2981D6F4E732153E6E4BBE6B /* Pods-ProductCatExample-ProductCatExampleUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProductCatExample-ProductCatExampleUITests-Info.plist"; sourceTree = "<group>"; };
+		184D45824CB5A8A466B391FE10BE9817 /* UIViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtensions.swift; path = ALCameraViewController/Utilities/UIViewExtensions.swift; sourceTree = "<group>"; };
+		1A6D39F2C723EB0D1B2B1155E9AFDD99 /* CroppingParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CroppingParameters.swift; path = ALCameraViewController/Utilities/CroppingParameters.swift; sourceTree = "<group>"; };
+		1BCF8C383B6CE5C9BF61BC5697C92463 /* KRProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KRProgressHUD.release.xcconfig; sourceTree = "<group>"; };
+		1C1B72A4C61FBA9E3AE3D5991EF8DA99 /* CameraGlobals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraGlobals.swift; path = ALCameraViewController/Utilities/CameraGlobals.swift; sourceTree = "<group>"; };
+		1C33CB84138510317C9CFF8E19C47C23 /* KRProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KRProgressHUD.framework; path = KRProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D1648475AE18FAD163C9598DB2F215B /* KRProgressHUDViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRProgressHUDViewController.swift; path = KRProgressHUD/Classes/KRProgressHUDViewController.swift; sourceTree = "<group>"; };
+		1D48BEBD21689CCDBDEF1F5084350731 /* KRProgressHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRProgressHUD.swift; path = KRProgressHUD/Classes/KRProgressHUD.swift; sourceTree = "<group>"; };
+		1EACB4656F882E58A548A0C71AE92879 /* Pods-ProductCatExample-ProductCatExampleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ProductCatExample-ProductCatExampleUITests-umbrella.h"; sourceTree = "<group>"; };
+		1F9F14DCFAF01012C0C620522EB5DB1B /* Option.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Option.swift; path = ImageLoader/Core/Option.swift; sourceTree = "<group>"; };
+		214EA8B3A66819757A44D19E9741E8C8 /* PermissionsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PermissionsView.swift; path = ALCameraViewController/Views/PermissionsView.swift; sourceTree = "<group>"; };
+		2330CEC83BFE58E38005E3A51574A9EC /* ImageLoader-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ImageLoader-Info.plist"; sourceTree = "<group>"; };
+		2380F4387ED5216E2EC0AFC19710A3B5 /* KRActivityIndicatorView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KRActivityIndicatorView-Info.plist"; sourceTree = "<group>"; };
+		267C787DA804FDB7824E2904022F7DDD /* UIImage+ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+ImageLoader.swift"; path = "ImageLoader/Extension/UIImage+ImageLoader.swift"; sourceTree = "<group>"; };
+		2697EE7D526DE2BE1AC1B6AA1107D9D5 /* CameraShot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraShot.swift; path = ALCameraViewController/Utilities/CameraShot.swift; sourceTree = "<group>"; };
+		28A5F40A086DC6A684D83321C2A4F7E2 /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = ALCameraViewController/Utilities/Utilities.swift; sourceTree = "<group>"; };
+		2D21BD9990FEE2B54F01BC84184EC93E /* ImageLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ImageLoader.modulemap; sourceTree = "<group>"; };
+		2DC831FCDAEAA9C29B71F5758C008694 /* ImageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCell.swift; path = ALCameraViewController/Views/ImageCell.swift; sourceTree = "<group>"; };
+		2E88696062BE39442A01966EAE8C8564 /* Pods-ProductCatExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ProductCatExample-umbrella.h"; sourceTree = "<group>"; };
+		306746C87F393ED31610D64494747A08 /* KRProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KRProgressHUD.modulemap; sourceTree = "<group>"; };
+		328329060DB0E9F762E31E032C1FDC1D /* Pods-ProductCatExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProductCatExample-Info.plist"; sourceTree = "<group>"; };
+		349ECDA8DAE68A5905728CAC39111A6D /* Pods-ProductCatExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ProductCatExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3A9119B54782D26FC2929DFF88C09251 /* Pods-ProductCatExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ProductCatExampleTests-umbrella.h"; sourceTree = "<group>"; };
+		3F78A912225EF62632DD5D8567C0A5C3 /* Loadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Loadable.swift; path = ImageLoader/Core/Loadable.swift; sourceTree = "<group>"; };
+		41C6212F68E7614DD0832229EEDDDF43 /* HashStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HashStorage.swift; path = ImageLoader/Core/HashStorage.swift; sourceTree = "<group>"; };
+		46DBF903C07FE62E3CC123126CD3D9C1 /* Loader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Loader.swift; path = ImageLoader/Core/Loader.swift; sourceTree = "<group>"; };
+		4791BA610922C2BC84236290ABBC7DC8 /* ALCameraViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ALCameraViewController.modulemap; sourceTree = "<group>"; };
+		47ED8BEC641889427EB6B21D0DDB5E66 /* CameraViewAssets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = CameraViewAssets.xcassets; path = ALCameraViewController/CameraViewAssets.xcassets; sourceTree = "<group>"; };
+		480E1538AED6665E74BCED9C6E752EA7 /* ImageLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageLoader-prefix.pch"; sourceTree = "<group>"; };
+		48BDEC8EBECA69C9B2188F930027CEAC /* ALCameraViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALCameraViewController.debug.xcconfig; sourceTree = "<group>"; };
+		49839AC49D7360401124E0257680C79E /* Pods_ProductCatExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ProductCatExampleTests.framework; path = "Pods-ProductCatExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DD4849D3909C0FEA838C2337F990901 /* Pods-ProductCatExampleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProductCatExampleTests-Info.plist"; sourceTree = "<group>"; };
+		4F3FB8ADCA0C2B942432DD42BB6F7C54 /* Pods-ProductCatExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProductCatExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		53389DD563B4AB3FD0AE605CC6AD1070 /* ImageLoader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ImageLoader.debug.xcconfig; sourceTree = "<group>"; };
+		5BD95915B69234BE811726591410C6D8 /* Pods-ProductCatExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProductCatExample.release.xcconfig"; sourceTree = "<group>"; };
+		5D943EAEB3803D4E9972081EEF1EF052 /* VolumeControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VolumeControl.swift; path = ALCameraViewController/Utilities/VolumeControl.swift; sourceTree = "<group>"; };
+		5EDB22FC8DBD7AFE5FAD6DB88BBCA198 /* ImageLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ImageLoader-dummy.m"; sourceTree = "<group>"; };
+		62AFABE4E7215C104570C7329DDD343F /* KRActivityIndicatorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KRActivityIndicatorView-umbrella.h"; sourceTree = "<group>"; };
+		62E7822B79CFE3E9F2EE71FE2C096E65 /* PhotoLibraryAuthorizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoLibraryAuthorizer.swift; path = ALCameraViewController/Utilities/PhotoLibraryAuthorizer.swift; sourceTree = "<group>"; };
+		647669939B79B031D1F06188469BCC80 /* SingleImageSaver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleImageSaver.swift; path = ALCameraViewController/Utilities/SingleImageSaver.swift; sourceTree = "<group>"; };
+		6E630A09EC1B0C0E6FB7658F1D088CB3 /* KRProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KRProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		6E966DAF3A685236E184CD904F0B50A4 /* Pods-ProductCatExample-ProductCatExampleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ProductCatExample-ProductCatExampleUITests-dummy.m"; sourceTree = "<group>"; };
+		7182CB6385385E64864945A5E88C6A76 /* ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = ImageLoader/Core/ImageLoader.swift; sourceTree = "<group>"; };
+		730E1FD2AAEA74E7620470357F2B82EA /* CameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = ALCameraViewController/ViewController/CameraViewController.swift; sourceTree = "<group>"; };
+		7640A188CD51B5A37EC0284A901C1B09 /* ConfirmViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ConfirmViewController.xib; path = ALCameraViewController/ViewController/ConfirmViewController.xib; sourceTree = "<group>"; };
+		7D02316D5936A14BC3A2FB10C605AFD9 /* ImageLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageLoader-umbrella.h"; sourceTree = "<group>"; };
+		7E6A04D6705A1F0C4DE158A529903240 /* Operative.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operative.swift; path = ImageLoader/Core/Operative.swift; sourceTree = "<group>"; };
+		83E09E1843CF721A7C8DAEDCCB5DD632 /* Pods-ProductCatExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ProductCatExampleTests-dummy.m"; sourceTree = "<group>"; };
+		83FAB0007C11ABAE62D562E1EA64961F /* Pods-ProductCatExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ProductCatExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		88A67D52EF12D339157A555345CBDEBF /* ALCameraViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALCameraViewController-umbrella.h"; sourceTree = "<group>"; };
+		88A729BE30A823E91034F33B34EC1899 /* CGImageSource+ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGImageSource+ImageLoader.swift"; path = "ImageLoader/Extension/CGImageSource+ImageLoader.swift"; sourceTree = "<group>"; };
+		8AC499D7BD8047B09F630C4DAA0860F3 /* KRProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KRProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		8EAFBD6B0BFD2BD7040B22634DAF76D7 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIButtonExtensions.swift; path = ALCameraViewController/Utilities/UIButtonExtensions.swift; sourceTree = "<group>"; };
+		9030BF447D538FEB5E41AF2F986C4884 /* ALCameraViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALCameraViewController-prefix.pch"; sourceTree = "<group>"; };
+		9258ECC23A4C8B0274C7A6DF69DDFE95 /* KRActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KRActivityIndicatorView.framework; path = KRActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A0B4A3803B142DEFFDA278A828C5F8 /* Pods-ProductCatExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ProductCatExample-dummy.m"; sourceTree = "<group>"; };
+		94CCBBF14D2978E4D21A3636069327A3 /* Pods-ProductCatExample-ProductCatExampleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ProductCatExample-ProductCatExampleUITests-frameworks.sh"; sourceTree = "<group>"; };
+		95E3876689004C135D68E44A407A2ABC /* KRActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KRActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
+		97FE07FF7ABE3EFA7C7EC4E1FF7E96A8 /* Pods-ProductCatExample-ProductCatExampleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ProductCatExample-ProductCatExampleUITests.modulemap"; sourceTree = "<group>"; };
+		9953357454A50602F6ADC39471CF66FE /* Pods-ProductCatExample-ProductCatExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProductCatExample-ProductCatExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9D597B11E4419A4E3406748089ADC2CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A00EFA1E01E32A06A0DCB011FC79251C /* KRActivityIndicatorView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KRActivityIndicatorView.release.xcconfig; sourceTree = "<group>"; };
+		A02B149F780C56DAD4D91673F0D82D1F /* Pods_ProductCatExample_ProductCatExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ProductCatExample_ProductCatExampleUITests.framework; path = "Pods-ProductCatExample-ProductCatExampleUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A263595BF06FFD1401F9912EF22344A1 /* KRProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KRProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		A487E0CD825D8CCA727D36A85FAD1431 /* ImageLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ImageLoader.framework; path = ImageLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6B04A4C1986D6055894FEB8EF266431 /* CameraViewControllerConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraViewControllerConstraint.swift; path = ALCameraViewController/ViewController/CameraViewControllerConstraint.swift; sourceTree = "<group>"; };
+		A859E11BA958EE7BA793536AC25C73EE /* ALCameraViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ALCameraViewController-dummy.m"; sourceTree = "<group>"; };
+		AC51B0EDF4A320BDE69324AB66A43D8C /* CameraView.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = CameraView.strings; path = ALCameraViewController/CameraView.strings; sourceTree = "<group>"; };
+		B022FBEB4B0B4998327D9310042A5F0A /* Pods-ProductCatExample-ProductCatExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ProductCatExample-ProductCatExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2A6B37F16A1D383BC47A6626A3CAFC5 /* KRActivityIndicatorViewStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRActivityIndicatorViewStyle.swift; path = KRActivityIndicatorView/Classes/KRActivityIndicatorViewStyle.swift; sourceTree = "<group>"; };
+		B4CB7151FB20BC6D444E79459E2977FF /* Pods-ProductCatExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ProductCatExampleTests.modulemap"; sourceTree = "<group>"; };
+		B56895768954EC8A9737368E86D93510 /* SingleImageFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleImageFetcher.swift; path = ALCameraViewController/Utilities/SingleImageFetcher.swift; sourceTree = "<group>"; };
+		B65E1AF10CCF3B696C227C18A27C8BC9 /* KRActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KRActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
+		B77C16B1FF390E9E61EC3D8321FCB35C /* Disk.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disk.swift; path = ImageLoader/Core/Disk.swift; sourceTree = "<group>"; };
+		BB832500D3E751BEFB504F86582B4993 /* KRProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KRProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
+		BEEF8594355AE2E254A04BF34041BD29 /* KRActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRActivityIndicatorView.swift; path = KRActivityIndicatorView/Classes/KRActivityIndicatorView.swift; sourceTree = "<group>"; };
+		C072C3D56CB6CDC7FC3E5FE219A10790 /* ImageLoader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ImageLoader.release.xcconfig; sourceTree = "<group>"; };
+		C190D4A2DF95EF34AD8AE815434A31F3 /* Pods-ProductCatExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ProductCatExample-frameworks.sh"; sourceTree = "<group>"; };
+		C59712EA8B73AFE142F1C847FAEE22D3 /* Data+ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+ImageLoader.swift"; path = "ImageLoader/Extension/Data+ImageLoader.swift"; sourceTree = "<group>"; };
+		CA65E2B97184D588B166E2839E440EE0 /* Pods_ProductCatExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ProductCatExample.framework; path = "Pods-ProductCatExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6C79120AE9FD68E51C5CB2434ECA8C /* KRActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KRActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F7E70FD8B893DD270BAD64C05F86F2 /* Pods-ProductCatExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ProductCatExample.modulemap"; sourceTree = "<group>"; };
+		D5D50BF2F790186E099A3FD03351F8DA /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = KRProgressHUD/Classes/Extensions.swift; sourceTree = "<group>"; };
+		DE369ADE1AE225F0CE6A595065533E58 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = KRActivityIndicatorView/Classes/Extensions.swift; sourceTree = "<group>"; };
+		DFBC08E667BBC1ADBC5F3E9AC715C637 /* KRActivityIndicatorView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KRActivityIndicatorView.debug.xcconfig; sourceTree = "<group>"; };
+		E1DA85D40E36B02C7B37D11260947137 /* KRProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KRProgressHUD-Info.plist"; sourceTree = "<group>"; };
+		E41BE3BAA30710888DC0E5548E89D454 /* Pods-ProductCatExample-ProductCatExampleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ProductCatExample-ProductCatExampleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E572CE090A1C8FC30A02EFFB3FD52588 /* InnerKRProgressHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InnerKRProgressHUD.swift; path = KRProgressHUD/Classes/InnerKRProgressHUD.swift; sourceTree = "<group>"; };
+		E6CEA7EF3E9FFA74C443E54474B64EB3 /* KRProgressHUDIconType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRProgressHUDIconType.swift; path = KRProgressHUD/Classes/KRProgressHUDIconType.swift; sourceTree = "<group>"; };
+		E7AA28D224539371C3B8AF5572A944E9 /* CameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = ALCameraViewController/Views/CameraView.swift; sourceTree = "<group>"; };
+		E86F930EFCFD968B004715E961B8BD40 /* ALCameraViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALCameraViewController.release.xcconfig; sourceTree = "<group>"; };
+		EAFE620751F017A164ECE9CAA3FC056F /* ALCameraViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ALCameraViewController.framework; path = ALCameraViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0DD40B0DDB7698033075BDF4177959C /* Pods-ProductCatExample-ProductCatExampleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ProductCatExample-ProductCatExampleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F2B31E27D8917E4574EC20F763F02692 /* CropOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropOverlay.swift; path = ALCameraViewController/Views/CropOverlay.swift; sourceTree = "<group>"; };
+		F787CD0F131A0DF3C543E3478A45BC90 /* KRActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KRActivityIndicatorView.modulemap; sourceTree = "<group>"; };
+		F8C6DFC8A71DEEF0F1C09EF542E3410B /* ConfirmViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfirmViewController.swift; path = ALCameraViewController/ViewController/ConfirmViewController.swift; sourceTree = "<group>"; };
+		FAE9818794749E86371AECC116108CB8 /* URLLiteralConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLLiteralConvertible.swift; path = ImageLoader/Core/URLLiteralConvertible.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B4FC3A3EA8B5F40CFA319CBCB9A10F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5500C9BC537B56AAB9BC0431CB18ADD8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14E074A45A6B1D44B044DC67B5FD56CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C8A12E79E63AA73FC25D6D536DDA89A /* Foundation.framework in Frameworks */,
+				8F965F0161EB81C4C8228D10EDF56453 /* KRActivityIndicatorView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16DF7126CC7B4D0B75B1840D30E93A07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB83C680FAEDBE0DBD8D56693A837BA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D3BDA6167BA3C6D8606DC24615472D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DEB889CADE5473AB140BDB336B66E78 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1A63B255B97C79B781E519412FE23E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1295E98EFFD9626E5D50D96EF9E14BA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5187747A03FC6D1BFFF6E453BE86C69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37781C0DE8D911C50AF395D0D7A66C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB11CC54FDA03D7EFDA6FF971BA5F563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96D8204B3A36D243904EE9F04BE29ADD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089AB120E93C1AD3C1A4C0E66C3C9583 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9D597B11E4419A4E3406748089ADC2CF /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		22EEBEE5785DC109A7DC0C1E984DF5A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB6C79120AE9FD68E51C5CB2434ECA8C /* KRActivityIndicatorView.framework */,
+				089AB120E93C1AD3C1A4C0E66C3C9583 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		265C8555CA7FD3E369C8B22187274C8A /* Pods-ProductCatExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4CB7151FB20BC6D444E79459E2977FF /* Pods-ProductCatExampleTests.modulemap */,
+				83FAB0007C11ABAE62D562E1EA64961F /* Pods-ProductCatExampleTests-acknowledgements.markdown */,
+				01A302BFF115F406BEB9CD3F3A133C25 /* Pods-ProductCatExampleTests-acknowledgements.plist */,
+				83E09E1843CF721A7C8DAEDCCB5DD632 /* Pods-ProductCatExampleTests-dummy.m */,
+				4DD4849D3909C0FEA838C2337F990901 /* Pods-ProductCatExampleTests-Info.plist */,
+				3A9119B54782D26FC2929DFF88C09251 /* Pods-ProductCatExampleTests-umbrella.h */,
+				0C96BB3F2B3DAB1A5385150C736A5A36 /* Pods-ProductCatExampleTests.debug.xcconfig */,
+				4F3FB8ADCA0C2B942432DD42BB6F7C54 /* Pods-ProductCatExampleTests.release.xcconfig */,
+			);
+			name = "Pods-ProductCatExampleTests";
+			path = "Target Support Files/Pods-ProductCatExampleTests";
+			sourceTree = "<group>";
+		};
+		35C852733F7C30E29B74AB11FE794C58 /* KRProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				D5D50BF2F790186E099A3FD03351F8DA /* Extensions.swift */,
+				E572CE090A1C8FC30A02EFFB3FD52588 /* InnerKRProgressHUD.swift */,
+				1D48BEBD21689CCDBDEF1F5084350731 /* KRProgressHUD.swift */,
+				E6CEA7EF3E9FFA74C443E54474B64EB3 /* KRProgressHUDIconType.swift */,
+				1D1648475AE18FAD163C9598DB2F215B /* KRProgressHUDViewController.swift */,
+				ECB550E93E6AF044485B47A69BFA7701 /* Support Files */,
+			);
+			name = KRProgressHUD;
+			path = KRProgressHUD;
+			sourceTree = "<group>";
+		};
+		39F7475BDED9125AE893C01C005D88AD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4791BA610922C2BC84236290ABBC7DC8 /* ALCameraViewController.modulemap */,
+				A859E11BA958EE7BA793536AC25C73EE /* ALCameraViewController-dummy.m */,
+				0F288E773EFAB55EB5919BDA6E63E075 /* ALCameraViewController-Info.plist */,
+				9030BF447D538FEB5E41AF2F986C4884 /* ALCameraViewController-prefix.pch */,
+				88A67D52EF12D339157A555345CBDEBF /* ALCameraViewController-umbrella.h */,
+				48BDEC8EBECA69C9B2188F930027CEAC /* ALCameraViewController.debug.xcconfig */,
+				E86F930EFCFD968B004715E961B8BD40 /* ALCameraViewController.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ALCameraViewController";
+			sourceTree = "<group>";
+		};
+		7A211E2AA947D9D802B5AD3AFF66FBCE /* KRActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				DE369ADE1AE225F0CE6A595065533E58 /* Extensions.swift */,
+				BEEF8594355AE2E254A04BF34041BD29 /* KRActivityIndicatorView.swift */,
+				B2A6B37F16A1D383BC47A6626A3CAFC5 /* KRActivityIndicatorViewStyle.swift */,
+				CAA177C763BF3392050ED4B9295D9948 /* Support Files */,
+			);
+			name = KRActivityIndicatorView;
+			path = KRActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		A1A501C5F4CCE1BA4916D2E1BE9D654C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAFE620751F017A164ECE9CAA3FC056F /* ALCameraViewController.framework */,
+				A487E0CD825D8CCA727D36A85FAD1431 /* ImageLoader.framework */,
+				9258ECC23A4C8B0274C7A6DF69DDFE95 /* KRActivityIndicatorView.framework */,
+				1C33CB84138510317C9CFF8E19C47C23 /* KRProgressHUD.framework */,
+				CA65E2B97184D588B166E2839E440EE0 /* Pods_ProductCatExample.framework */,
+				A02B149F780C56DAD4D91673F0D82D1F /* Pods_ProductCatExample_ProductCatExampleUITests.framework */,
+				49839AC49D7360401124E0257680C79E /* Pods_ProductCatExampleTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF41A22482528DCE15464EF60324DD5B /* ALCameraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1C1B72A4C61FBA9E3AE3D5991EF8DA99 /* CameraGlobals.swift */,
+				2697EE7D526DE2BE1AC1B6AA1107D9D5 /* CameraShot.swift */,
+				E7AA28D224539371C3B8AF5572A944E9 /* CameraView.swift */,
+				730E1FD2AAEA74E7620470357F2B82EA /* CameraViewController.swift */,
+				A6B04A4C1986D6055894FEB8EF266431 /* CameraViewControllerConstraint.swift */,
+				F8C6DFC8A71DEEF0F1C09EF542E3410B /* ConfirmViewController.swift */,
+				F2B31E27D8917E4574EC20F763F02692 /* CropOverlay.swift */,
+				1A6D39F2C723EB0D1B2B1155E9AFDD99 /* CroppingParameters.swift */,
+				2DC831FCDAEAA9C29B71F5758C008694 /* ImageCell.swift */,
+				0285B0A52948BB5A770A12671CB8204E /* ImageFetcher.swift */,
+				214EA8B3A66819757A44D19E9741E8C8 /* PermissionsView.swift */,
+				62E7822B79CFE3E9F2EE71FE2C096E65 /* PhotoLibraryAuthorizer.swift */,
+				08AACEC9423F5D3FB60199E7ED2CAB6E /* PhotoLibraryViewController.swift */,
+				B56895768954EC8A9737368E86D93510 /* SingleImageFetcher.swift */,
+				647669939B79B031D1F06188469BCC80 /* SingleImageSaver.swift */,
+				8EAFBD6B0BFD2BD7040B22634DAF76D7 /* UIButtonExtensions.swift */,
+				184D45824CB5A8A466B391FE10BE9817 /* UIViewExtensions.swift */,
+				28A5F40A086DC6A684D83321C2A4F7E2 /* Utilities.swift */,
+				5D943EAEB3803D4E9972081EEF1EF052 /* VolumeControl.swift */,
+				FCDC116C1402811A953803C1E35E74B3 /* Resources */,
+				39F7475BDED9125AE893C01C005D88AD /* Support Files */,
+			);
+			name = ALCameraViewController;
+			path = ALCameraViewController;
+			sourceTree = "<group>";
+		};
+		BC574E4ED1016125425EF295F2B06B00 /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				88A729BE30A823E91034F33B34EC1899 /* CGImageSource+ImageLoader.swift */,
+				C59712EA8B73AFE142F1C847FAEE22D3 /* Data+ImageLoader.swift */,
+				B77C16B1FF390E9E61EC3D8321FCB35C /* Disk.swift */,
+				41C6212F68E7614DD0832229EEDDDF43 /* HashStorage.swift */,
+				7182CB6385385E64864945A5E88C6A76 /* ImageLoader.swift */,
+				3F78A912225EF62632DD5D8567C0A5C3 /* Loadable.swift */,
+				46DBF903C07FE62E3CC123126CD3D9C1 /* Loader.swift */,
+				7E6A04D6705A1F0C4DE158A529903240 /* Operative.swift */,
+				1F9F14DCFAF01012C0C620522EB5DB1B /* Option.swift */,
+				267C787DA804FDB7824E2904022F7DDD /* UIImage+ImageLoader.swift */,
+				053CD79AF7EEF7DD9D72E35FBF1B87FE /* UIImageView+ImageLoader.swift */,
+				FAE9818794749E86371AECC116108CB8 /* URLLiteralConvertible.swift */,
+				DB945B84C7CD80AF62EF784FAB3A0CAC /* Support Files */,
+			);
+			name = ImageLoader;
+			path = ImageLoader;
+			sourceTree = "<group>";
+		};
+		CAA177C763BF3392050ED4B9295D9948 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F787CD0F131A0DF3C543E3478A45BC90 /* KRActivityIndicatorView.modulemap */,
+				95E3876689004C135D68E44A407A2ABC /* KRActivityIndicatorView-dummy.m */,
+				2380F4387ED5216E2EC0AFC19710A3B5 /* KRActivityIndicatorView-Info.plist */,
+				B65E1AF10CCF3B696C227C18A27C8BC9 /* KRActivityIndicatorView-prefix.pch */,
+				62AFABE4E7215C104570C7329DDD343F /* KRActivityIndicatorView-umbrella.h */,
+				DFBC08E667BBC1ADBC5F3E9AC715C637 /* KRActivityIndicatorView.debug.xcconfig */,
+				A00EFA1E01E32A06A0DCB011FC79251C /* KRActivityIndicatorView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KRActivityIndicatorView";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				22EEBEE5785DC109A7DC0C1E984DF5A1 /* Frameworks */,
+				FFC463FB97C602C29EE55F1E0FD5C8A6 /* Pods */,
+				A1A501C5F4CCE1BA4916D2E1BE9D654C /* Products */,
+				EE11E55D85447FA4396EADB16EEE1E38 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DB945B84C7CD80AF62EF784FAB3A0CAC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D21BD9990FEE2B54F01BC84184EC93E /* ImageLoader.modulemap */,
+				5EDB22FC8DBD7AFE5FAD6DB88BBCA198 /* ImageLoader-dummy.m */,
+				2330CEC83BFE58E38005E3A51574A9EC /* ImageLoader-Info.plist */,
+				480E1538AED6665E74BCED9C6E752EA7 /* ImageLoader-prefix.pch */,
+				7D02316D5936A14BC3A2FB10C605AFD9 /* ImageLoader-umbrella.h */,
+				53389DD563B4AB3FD0AE605CC6AD1070 /* ImageLoader.debug.xcconfig */,
+				C072C3D56CB6CDC7FC3E5FE219A10790 /* ImageLoader.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ImageLoader";
+			sourceTree = "<group>";
+		};
+		DD72ABBE05787D2F67762B99B02503DC /* Pods-ProductCatExample-ProductCatExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				97FE07FF7ABE3EFA7C7EC4E1FF7E96A8 /* Pods-ProductCatExample-ProductCatExampleUITests.modulemap */,
+				E41BE3BAA30710888DC0E5548E89D454 /* Pods-ProductCatExample-ProductCatExampleUITests-acknowledgements.markdown */,
+				F0DD40B0DDB7698033075BDF4177959C /* Pods-ProductCatExample-ProductCatExampleUITests-acknowledgements.plist */,
+				6E966DAF3A685236E184CD904F0B50A4 /* Pods-ProductCatExample-ProductCatExampleUITests-dummy.m */,
+				94CCBBF14D2978E4D21A3636069327A3 /* Pods-ProductCatExample-ProductCatExampleUITests-frameworks.sh */,
+				14E435DA2981D6F4E732153E6E4BBE6B /* Pods-ProductCatExample-ProductCatExampleUITests-Info.plist */,
+				1EACB4656F882E58A548A0C71AE92879 /* Pods-ProductCatExample-ProductCatExampleUITests-umbrella.h */,
+				B022FBEB4B0B4998327D9310042A5F0A /* Pods-ProductCatExample-ProductCatExampleUITests.debug.xcconfig */,
+				9953357454A50602F6ADC39471CF66FE /* Pods-ProductCatExample-ProductCatExampleUITests.release.xcconfig */,
+			);
+			name = "Pods-ProductCatExample-ProductCatExampleUITests";
+			path = "Target Support Files/Pods-ProductCatExample-ProductCatExampleUITests";
+			sourceTree = "<group>";
+		};
+		E75892C9DE3ADB39D92E12E3DC41B7A0 /* Pods-ProductCatExample */ = {
+			isa = PBXGroup;
+			children = (
+				D2F7E70FD8B893DD270BAD64C05F86F2 /* Pods-ProductCatExample.modulemap */,
+				349ECDA8DAE68A5905728CAC39111A6D /* Pods-ProductCatExample-acknowledgements.markdown */,
+				072D6A4C5583F1289D59FC5160095A0A /* Pods-ProductCatExample-acknowledgements.plist */,
+				93A0B4A3803B142DEFFDA278A828C5F8 /* Pods-ProductCatExample-dummy.m */,
+				C190D4A2DF95EF34AD8AE815434A31F3 /* Pods-ProductCatExample-frameworks.sh */,
+				328329060DB0E9F762E31E032C1FDC1D /* Pods-ProductCatExample-Info.plist */,
+				2E88696062BE39442A01966EAE8C8564 /* Pods-ProductCatExample-umbrella.h */,
+				13E79418C2CC623DFC608FBF9C73788B /* Pods-ProductCatExample.debug.xcconfig */,
+				5BD95915B69234BE811726591410C6D8 /* Pods-ProductCatExample.release.xcconfig */,
+			);
+			name = "Pods-ProductCatExample";
+			path = "Target Support Files/Pods-ProductCatExample";
+			sourceTree = "<group>";
+		};
+		ECB550E93E6AF044485B47A69BFA7701 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				306746C87F393ED31610D64494747A08 /* KRProgressHUD.modulemap */,
+				8AC499D7BD8047B09F630C4DAA0860F3 /* KRProgressHUD-dummy.m */,
+				E1DA85D40E36B02C7B37D11260947137 /* KRProgressHUD-Info.plist */,
+				6E630A09EC1B0C0E6FB7658F1D088CB3 /* KRProgressHUD-prefix.pch */,
+				A263595BF06FFD1401F9912EF22344A1 /* KRProgressHUD-umbrella.h */,
+				BB832500D3E751BEFB504F86582B4993 /* KRProgressHUD.debug.xcconfig */,
+				1BCF8C383B6CE5C9BF61BC5697C92463 /* KRProgressHUD.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KRProgressHUD";
+			sourceTree = "<group>";
+		};
+		EE11E55D85447FA4396EADB16EEE1E38 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E75892C9DE3ADB39D92E12E3DC41B7A0 /* Pods-ProductCatExample */,
+				DD72ABBE05787D2F67762B99B02503DC /* Pods-ProductCatExample-ProductCatExampleUITests */,
+				265C8555CA7FD3E369C8B22187274C8A /* Pods-ProductCatExampleTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FCDC116C1402811A953803C1E35E74B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC51B0EDF4A320BDE69324AB66A43D8C /* CameraView.strings */,
+				47ED8BEC641889427EB6B21D0DDB5E66 /* CameraViewAssets.xcassets */,
+				7640A188CD51B5A37EC0284A901C1B09 /* ConfirmViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FFC463FB97C602C29EE55F1E0FD5C8A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF41A22482528DCE15464EF60324DD5B /* ALCameraViewController */,
+				BC574E4ED1016125425EF295F2B06B00 /* ImageLoader */,
+				7A211E2AA947D9D802B5AD3AFF66FBCE /* KRActivityIndicatorView */,
+				35C852733F7C30E29B74AB11FE794C58 /* KRProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1AE033DDCBEC95243AD6C5B9C06F66D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E862CC41FC47997D7371636D5B14F0D /* ImageLoader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4844466F175925A45607142FDE1F09B5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03573D54D735755FCC7832A960D54914 /* Pods-ProductCatExampleTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BD43ABFC88B856E75E8A5C8CFABE5DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B08BE67E2FAACEB75B2642DEA72EBAEC /* KRActivityIndicatorView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4417844CBE788511C2A86600F9E4275 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40B948B85F9DD18926F8CE71FE12EF9E /* ALCameraViewController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C948D48836D4556CA26B270F629BA7F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52AD203B355EF3F073B5B78096E93512 /* Pods-ProductCatExample-ProductCatExampleUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE3523D09A22DD54E516054154D5492 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71B31EDCC1ACA87CD0B5A8EDACDF1D03 /* KRProgressHUD-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA29E9273A97FB12929B574DA1F55E94 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4818ABB92605CEA8C220E30691837FE /* Pods-ProductCatExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		269D828BFEDDD2E14A9BC55D5D392757 /* ImageLoader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1D01244069FCA9AC99D24E030FC41B8 /* Build configuration list for PBXNativeTarget "ImageLoader" */;
+			buildPhases = (
+				1AE033DDCBEC95243AD6C5B9C06F66D6 /* Headers */,
+				49E7371CAE052455A30BAE89C8ACD666 /* Sources */,
+				5D3BDA6167BA3C6D8606DC24615472D0 /* Frameworks */,
+				118997753682D4079A046DDCFFADBA18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageLoader;
+			productName = ImageLoader;
+			productReference = A487E0CD825D8CCA727D36A85FAD1431 /* ImageLoader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3D151B72D5CE9336C8AD8927D077A295 /* ALCameraViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C824956660F94A02DB7586D859AC471 /* Build configuration list for PBXNativeTarget "ALCameraViewController" */;
+			buildPhases = (
+				A4417844CBE788511C2A86600F9E4275 /* Headers */,
+				AA484444FEB0440122AA793E1DE5AD9C /* Sources */,
+				AB11CC54FDA03D7EFDA6FF971BA5F563 /* Frameworks */,
+				F0DCB67CE432498D57435FE0F121359F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ALCameraViewController;
+			productName = ALCameraViewController;
+			productReference = EAFE620751F017A164ECE9CAA3FC056F /* ALCameraViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4B1C0E99EF8D3CCA6C450A065EEFD558 /* Pods-ProductCatExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5F78116A325BA7979CEDBED17B00891 /* Build configuration list for PBXNativeTarget "Pods-ProductCatExampleTests" */;
+			buildPhases = (
+				4844466F175925A45607142FDE1F09B5 /* Headers */,
+				7B29C7533F20D46B83D225961DD94D8C /* Sources */,
+				A5187747A03FC6D1BFFF6E453BE86C69 /* Frameworks */,
+				C70B19FC463827E24B4919B8F59C62D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3154BDF446CD7DEB48FEF694E50DEBAC /* PBXTargetDependency */,
+			);
+			name = "Pods-ProductCatExampleTests";
+			productName = "Pods-ProductCatExampleTests";
+			productReference = 49839AC49D7360401124E0257680C79E /* Pods_ProductCatExampleTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4F7A1E5A05AF87570E2873C5F725E2CB /* KRActivityIndicatorView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8682F0722472CE2AF5A0A6F635D06841 /* Build configuration list for PBXNativeTarget "KRActivityIndicatorView" */;
+			buildPhases = (
+				6BD43ABFC88B856E75E8A5C8CFABE5DC /* Headers */,
+				34AB59E1B199F146F95D49B435D6526C /* Sources */,
+				8D1A63B255B97C79B781E519412FE23E /* Frameworks */,
+				B6842BCBA42C0E8EC65DA53F1F2D3AAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KRActivityIndicatorView;
+			productName = KRActivityIndicatorView;
+			productReference = 9258ECC23A4C8B0274C7A6DF69DDFE95 /* KRActivityIndicatorView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8B1DD3507A4928ACD0DA112A933B0EBC /* Pods-ProductCatExample-ProductCatExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5425A8B47041C555D286B60ED1346F9 /* Build configuration list for PBXNativeTarget "Pods-ProductCatExample-ProductCatExampleUITests" */;
+			buildPhases = (
+				C948D48836D4556CA26B270F629BA7F8 /* Headers */,
+				6220E65870B055BBD34F3899BF5042D9 /* Sources */,
+				16DF7126CC7B4D0B75B1840D30E93A07 /* Frameworks */,
+				39A2DF81ABC61778C07A49FB113B3BE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D32D470FC6ABA510737E7D42C1343FBF /* PBXTargetDependency */,
+				086D6D3AF25B32A2B3CD554D0EA7E7E1 /* PBXTargetDependency */,
+				0E143E7B258E33B609FBE727CDA50A00 /* PBXTargetDependency */,
+				54455691668175EE191DA20F7E882E5A /* PBXTargetDependency */,
+			);
+			name = "Pods-ProductCatExample-ProductCatExampleUITests";
+			productName = "Pods-ProductCatExample-ProductCatExampleUITests";
+			productReference = A02B149F780C56DAD4D91673F0D82D1F /* Pods_ProductCatExample_ProductCatExampleUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BA4681533D6AA601F9C9E2A116B7472C /* KRProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E758551590353890ECD3BA8D57CF2069 /* Build configuration list for PBXNativeTarget "KRProgressHUD" */;
+			buildPhases = (
+				DFE3523D09A22DD54E516054154D5492 /* Headers */,
+				CDAB7CB60BEBCC2095F0B95F6C75BD33 /* Sources */,
+				14E074A45A6B1D44B044DC67B5FD56CF /* Frameworks */,
+				D12086AA025371CC2799425212F28A8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A79D066A7116600994D0A50A77ECB986 /* PBXTargetDependency */,
+			);
+			name = KRProgressHUD;
+			productName = KRProgressHUD;
+			productReference = 1C33CB84138510317C9CFF8E19C47C23 /* KRProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF8CCC25B6E488AE636F6FD221BA5BE8 /* Pods-ProductCatExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29AA3F85DE7283951E6BA077C4553ABD /* Build configuration list for PBXNativeTarget "Pods-ProductCatExample" */;
+			buildPhases = (
+				FA29E9273A97FB12929B574DA1F55E94 /* Headers */,
+				13D9EA6648156E40E0717CEB716A5847 /* Sources */,
+				0B4FC3A3EA8B5F40CFA319CBCB9A10F8 /* Frameworks */,
+				2200AD6A3BF6AEA840BB65F057C0DAD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E79334833E56BF20822B6DAFD33A9B4 /* PBXTargetDependency */,
+				16F2F4212252E80B430503A36B385323 /* PBXTargetDependency */,
+				339A3F046A7394DB4AB302CB41D0228B /* PBXTargetDependency */,
+				12C4AE581D0DC09320843C1AA8F2967C /* PBXTargetDependency */,
+			);
+			name = "Pods-ProductCatExample";
+			productName = "Pods-ProductCatExample";
+			productReference = CA65E2B97184D588B166E2839E440EE0 /* Pods_ProductCatExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A1A501C5F4CCE1BA4916D2E1BE9D654C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D151B72D5CE9336C8AD8927D077A295 /* ALCameraViewController */,
+				269D828BFEDDD2E14A9BC55D5D392757 /* ImageLoader */,
+				4F7A1E5A05AF87570E2873C5F725E2CB /* KRActivityIndicatorView */,
+				BA4681533D6AA601F9C9E2A116B7472C /* KRProgressHUD */,
+				CF8CCC25B6E488AE636F6FD221BA5BE8 /* Pods-ProductCatExample */,
+				8B1DD3507A4928ACD0DA112A933B0EBC /* Pods-ProductCatExample-ProductCatExampleUITests */,
+				4B1C0E99EF8D3CCA6C450A065EEFD558 /* Pods-ProductCatExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		118997753682D4079A046DDCFFADBA18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2200AD6A3BF6AEA840BB65F057C0DAD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39A2DF81ABC61778C07A49FB113B3BE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6842BCBA42C0E8EC65DA53F1F2D3AAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C70B19FC463827E24B4919B8F59C62D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D12086AA025371CC2799425212F28A8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0DCB67CE432498D57435FE0F121359F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D3BAAB9F1D7BA4825DBF8150F78E87 /* CameraView.strings in Resources */,
+				29DECE041019CE945AAA17EEDB1B3FDB /* CameraViewAssets.xcassets in Resources */,
+				ADF8489E09D0D4C4BF03C96DF95E2C75 /* ConfirmViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13D9EA6648156E40E0717CEB716A5847 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6B9E476D455F0021E667A45A29A1C92 /* Pods-ProductCatExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34AB59E1B199F146F95D49B435D6526C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA00C6A264C2E09CA73D144B38CB16A /* Extensions.swift in Sources */,
+				4A2D8E4BA4222581DB30A8693DD38882 /* KRActivityIndicatorView-dummy.m in Sources */,
+				8691040C4144FF67AF097D34E7B4075A /* KRActivityIndicatorView.swift in Sources */,
+				F64EAB10BAE213A7034C70C8CCAE2B44 /* KRActivityIndicatorViewStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E7371CAE052455A30BAE89C8ACD666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1C728998AB799AC244F7ED9BA4B1BB /* CGImageSource+ImageLoader.swift in Sources */,
+				C1DCAFA78F691AB24596519966694BD3 /* Data+ImageLoader.swift in Sources */,
+				852DD6324AC6921FD301D4E58A9EC5E0 /* Disk.swift in Sources */,
+				5CECB957C537B7D9CCD41FDA0FBF645C /* HashStorage.swift in Sources */,
+				F540EA9C871F750BEC5E1E3DBE654D93 /* ImageLoader-dummy.m in Sources */,
+				9E774B2C215F27698B2EB1CFE441C8D7 /* ImageLoader.swift in Sources */,
+				D91C88E05B479FE84073AE817371F76E /* Loadable.swift in Sources */,
+				91E889574F0FC4430BDF7CA91CCF6DBE /* Loader.swift in Sources */,
+				2764E53847A07485C74C4940F35CC844 /* Operative.swift in Sources */,
+				168D399EF67DF93D60B6E5C2D36DFDB4 /* Option.swift in Sources */,
+				B9B183E2408CDA0C82B7CC2045B5856E /* UIImage+ImageLoader.swift in Sources */,
+				1502C3B5730D80705F0F29615F0DBC1D /* UIImageView+ImageLoader.swift in Sources */,
+				22068882F9F79FACADE8B6C5D3AB50C2 /* URLLiteralConvertible.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6220E65870B055BBD34F3899BF5042D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5297FB710F7BEA76F77C7E7C5556B8BD /* Pods-ProductCatExample-ProductCatExampleUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B29C7533F20D46B83D225961DD94D8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E537C830DF2092EDEBCC9EB5E2B38C7 /* Pods-ProductCatExampleTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA484444FEB0440122AA793E1DE5AD9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8B47A2AA1ADD2A24DE172D30F3999C /* ALCameraViewController-dummy.m in Sources */,
+				5CFACF382D9204F792CB6C931E207DFB /* CameraGlobals.swift in Sources */,
+				7B7E89CD84751B5C6682A047F483205A /* CameraShot.swift in Sources */,
+				2934478BDB6C711E6313B9E9B712716C /* CameraView.swift in Sources */,
+				BDF1477984864423290760EB72C6A023 /* CameraViewController.swift in Sources */,
+				86F95728A271884544EA8E5BE4C813DB /* CameraViewControllerConstraint.swift in Sources */,
+				1140ED5D4474F84751637FFA17351341 /* ConfirmViewController.swift in Sources */,
+				79918DC57AAD81CF4570747D947D834E /* CropOverlay.swift in Sources */,
+				5165DB589723210842E210269D050751 /* CroppingParameters.swift in Sources */,
+				1C26BD6F12ADF390CC5EF342891F5BDC /* ImageCell.swift in Sources */,
+				2C2BC7EE0BE778C040C5CDE3085C53E0 /* ImageFetcher.swift in Sources */,
+				023483EF6721F8033AAC6FA4509B0105 /* PermissionsView.swift in Sources */,
+				8BA8801CA92679EA832FA6D41B1ECECB /* PhotoLibraryAuthorizer.swift in Sources */,
+				2B387CDEA424D774B669A08EF29299AD /* PhotoLibraryViewController.swift in Sources */,
+				0ECC1E5004C894600FA8A271B66DEDE6 /* SingleImageFetcher.swift in Sources */,
+				D98EB3C499308BA57D37D2A21157F1A2 /* SingleImageSaver.swift in Sources */,
+				82C29EC20120B3EEF6B867F8B0A7B5AB /* UIButtonExtensions.swift in Sources */,
+				854FA63BFE263E6D5ED8DDAAC20206CD /* UIViewExtensions.swift in Sources */,
+				C4A7121FFDE59153BE08375B7260C1C6 /* Utilities.swift in Sources */,
+				17D127410C33EFA57783E119AE6331FF /* VolumeControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDAB7CB60BEBCC2095F0B95F6C75BD33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98CC7BEAD7F982A0978939D804818C72 /* Extensions.swift in Sources */,
+				D0A665A78DA17DC6D4E13883245CAA3C /* InnerKRProgressHUD.swift in Sources */,
+				C218FE5D841254675FA809C980579D18 /* KRProgressHUD-dummy.m in Sources */,
+				EC070297716F78F774EA722F417DD787 /* KRProgressHUD.swift in Sources */,
+				6175AF685E0002FAA4CC678BE48A8C10 /* KRProgressHUDIconType.swift in Sources */,
+				F18FCAB8BC039DC8AC34B752FD1D7A42 /* KRProgressHUDViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		086D6D3AF25B32A2B3CD554D0EA7E7E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ImageLoader;
+			target = 269D828BFEDDD2E14A9BC55D5D392757 /* ImageLoader */;
+			targetProxy = 90668A54BCE5375DAE8B241E6D88915F /* PBXContainerItemProxy */;
+		};
+		0E143E7B258E33B609FBE727CDA50A00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KRActivityIndicatorView;
+			target = 4F7A1E5A05AF87570E2873C5F725E2CB /* KRActivityIndicatorView */;
+			targetProxy = 44EBAB1EA87F35CEDDC1C38008ADFD8F /* PBXContainerItemProxy */;
+		};
+		12C4AE581D0DC09320843C1AA8F2967C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KRProgressHUD;
+			target = BA4681533D6AA601F9C9E2A116B7472C /* KRProgressHUD */;
+			targetProxy = 762B4985EEB1C0E4D125DE59D2FE50E3 /* PBXContainerItemProxy */;
+		};
+		16F2F4212252E80B430503A36B385323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ImageLoader;
+			target = 269D828BFEDDD2E14A9BC55D5D392757 /* ImageLoader */;
+			targetProxy = 71C56158481F59F5D50AE792B10A3216 /* PBXContainerItemProxy */;
+		};
+		2E79334833E56BF20822B6DAFD33A9B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ALCameraViewController;
+			target = 3D151B72D5CE9336C8AD8927D077A295 /* ALCameraViewController */;
+			targetProxy = 285F011D3E13F9714FA5BF01B7EAE56B /* PBXContainerItemProxy */;
+		};
+		3154BDF446CD7DEB48FEF694E50DEBAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ProductCatExample";
+			target = CF8CCC25B6E488AE636F6FD221BA5BE8 /* Pods-ProductCatExample */;
+			targetProxy = DAFCD1A14765D76DE3D42503CC1B3805 /* PBXContainerItemProxy */;
+		};
+		339A3F046A7394DB4AB302CB41D0228B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KRActivityIndicatorView;
+			target = 4F7A1E5A05AF87570E2873C5F725E2CB /* KRActivityIndicatorView */;
+			targetProxy = 8CE65826E30C702E00FF724B7336D640 /* PBXContainerItemProxy */;
+		};
+		54455691668175EE191DA20F7E882E5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KRProgressHUD;
+			target = BA4681533D6AA601F9C9E2A116B7472C /* KRProgressHUD */;
+			targetProxy = 531138F5859A87F98D39FEC020A16EFD /* PBXContainerItemProxy */;
+		};
+		A79D066A7116600994D0A50A77ECB986 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KRActivityIndicatorView;
+			target = 4F7A1E5A05AF87570E2873C5F725E2CB /* KRActivityIndicatorView */;
+			targetProxy = 5F3A5DC7A94FF5FE690FD26A901C570F /* PBXContainerItemProxy */;
+		};
+		D32D470FC6ABA510737E7D42C1343FBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ALCameraViewController;
+			target = 3D151B72D5CE9336C8AD8927D077A295 /* ALCameraViewController */;
+			targetProxy = 06216CBE5EB300246850611FE7052EB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E71E901E5F053B6166BFE64EF5D4A67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BCF8C383B6CE5C9BF61BC5697C92463 /* KRProgressHUD.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KRProgressHUD/KRProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KRProgressHUD/KRProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KRProgressHUD/KRProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = KRProgressHUD;
+				PRODUCT_NAME = KRProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1048FF8DD8323F78D4F5857681721F7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9953357454A50602F6ADC39471CF66FE /* Pods-ProductCatExample-ProductCatExampleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ProductCatExample-ProductCatExampleUITests/Pods-ProductCatExample-ProductCatExampleUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProductCatExample-ProductCatExampleUITests/Pods-ProductCatExample-ProductCatExampleUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		18B8F053CA46210057B7AFB658990EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53389DD563B4AB3FD0AE605CC6AD1070 /* ImageLoader.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ImageLoader/ImageLoader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImageLoader/ImageLoader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ImageLoader/ImageLoader.modulemap";
+				PRODUCT_MODULE_NAME = ImageLoader;
+				PRODUCT_NAME = ImageLoader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1CAE8E63235E6F9BE81DEE241AA1F40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B022FBEB4B0B4998327D9310042A5F0A /* Pods-ProductCatExample-ProductCatExampleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ProductCatExample-ProductCatExampleUITests/Pods-ProductCatExample-ProductCatExampleUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProductCatExample-ProductCatExampleUITests/Pods-ProductCatExample-ProductCatExampleUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		340939648396B58E8F582401EC8042C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F3FB8ADCA0C2B942432DD42BB6F7C54 /* Pods-ProductCatExampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ProductCatExampleTests/Pods-ProductCatExampleTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProductCatExampleTests/Pods-ProductCatExampleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E2D9EE124FCBB1AF7A2380B2DD235D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BD95915B69234BE811726591410C6D8 /* Pods-ProductCatExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ProductCatExample/Pods-ProductCatExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProductCatExample/Pods-ProductCatExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		661D43E6D3127FCC2938A3AD47468671 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A00EFA1E01E32A06A0DCB011FC79251C /* KRActivityIndicatorView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = KRActivityIndicatorView;
+				PRODUCT_NAME = KRActivityIndicatorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B093712FF1785C898871B9AA5CF00F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13E79418C2CC623DFC608FBF9C73788B /* Pods-ProductCatExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ProductCatExample/Pods-ProductCatExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProductCatExample/Pods-ProductCatExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C516AC63A62036CA55E9E4DB9EE14F4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E86F930EFCFD968B004715E961B8BD40 /* ALCameraViewController.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ALCameraViewController/ALCameraViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ALCameraViewController/ALCameraViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ALCameraViewController/ALCameraViewController.modulemap";
+				PRODUCT_MODULE_NAME = ALCameraViewController;
+				PRODUCT_NAME = ALCameraViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D4A1151ADB3F7B92311360157447F6B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C072C3D56CB6CDC7FC3E5FE219A10790 /* ImageLoader.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ImageLoader/ImageLoader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImageLoader/ImageLoader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ImageLoader/ImageLoader.modulemap";
+				PRODUCT_MODULE_NAME = ImageLoader;
+				PRODUCT_NAME = ImageLoader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D693DBE9C2BD70DA5CA031CA710691AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB832500D3E751BEFB504F86582B4993 /* KRProgressHUD.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KRProgressHUD/KRProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KRProgressHUD/KRProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KRProgressHUD/KRProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = KRProgressHUD;
+				PRODUCT_NAME = KRProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D88DA9970D5F6C20A892D7944465B4DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48BDEC8EBECA69C9B2188F930027CEAC /* ALCameraViewController.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ALCameraViewController/ALCameraViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ALCameraViewController/ALCameraViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ALCameraViewController/ALCameraViewController.modulemap";
+				PRODUCT_MODULE_NAME = ALCameraViewController;
+				PRODUCT_NAME = ALCameraViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DB57A7276BB2C0D546FDFCC24BE88B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C96BB3F2B3DAB1A5385150C736A5A36 /* Pods-ProductCatExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ProductCatExampleTests/Pods-ProductCatExampleTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ProductCatExampleTests/Pods-ProductCatExampleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F0E4B686EEAF1B7945481E78C8CA08AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFBC08E667BBC1ADBC5F3E9AC715C637 /* KRActivityIndicatorView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = KRActivityIndicatorView;
+				PRODUCT_NAME = KRActivityIndicatorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29AA3F85DE7283951E6BA077C4553ABD /* Build configuration list for PBXNativeTarget "Pods-ProductCatExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B093712FF1785C898871B9AA5CF00F41 /* Debug */,
+				5E2D9EE124FCBB1AF7A2380B2DD235D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C824956660F94A02DB7586D859AC471 /* Build configuration list for PBXNativeTarget "ALCameraViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D88DA9970D5F6C20A892D7944465B4DC /* Debug */,
+				C516AC63A62036CA55E9E4DB9EE14F4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8682F0722472CE2AF5A0A6F635D06841 /* Build configuration list for PBXNativeTarget "KRActivityIndicatorView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0E4B686EEAF1B7945481E78C8CA08AB /* Debug */,
+				661D43E6D3127FCC2938A3AD47468671 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5F78116A325BA7979CEDBED17B00891 /* Build configuration list for PBXNativeTarget "Pods-ProductCatExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB57A7276BB2C0D546FDFCC24BE88B2A /* Debug */,
+				340939648396B58E8F582401EC8042C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1D01244069FCA9AC99D24E030FC41B8 /* Build configuration list for PBXNativeTarget "ImageLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B8F053CA46210057B7AFB658990EF5 /* Debug */,
+				D4A1151ADB3F7B92311360157447F6B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5425A8B47041C555D286B60ED1346F9 /* Build configuration list for PBXNativeTarget "Pods-ProductCatExample-ProductCatExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CAE8E63235E6F9BE81DEE241AA1F40E /* Debug */,
+				1048FF8DD8323F78D4F5857681721F7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E758551590353890ECD3BA8D57CF2069 /* Build configuration list for PBXNativeTarget "KRProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D693DBE9C2BD70DA5CA031CA710691AC /* Debug */,
+				0E71E901E5F053B6166BFE64EF5D4A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

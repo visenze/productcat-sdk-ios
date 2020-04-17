@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-ProductCatExample/Pods-ProductCatExample-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ALCameraViewController/ALCameraViewController.framework
+${BUILT_PRODUCTS_DIR}/ImageLoader/ImageLoader.framework
+${BUILT_PRODUCTS_DIR}/KRActivityIndicatorView/KRActivityIndicatorView.framework
+${BUILT_PRODUCTS_DIR}/KRProgressHUD/KRProgressHUD.framework
