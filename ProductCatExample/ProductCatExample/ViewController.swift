@@ -21,31 +21,5 @@ class ViewController: UIViewController {
         ProductCat.sharedInstance.showConsentForm(nil)
     }
     
-    
-    @IBAction func testBtnClick(_ sender: Any) {
-        /*let imgSearchParams = ImageSearchParams(
-            country: ProductCat.sharedInstance.client!.country ,
-            image: UIImage(ciImage: CIImage(color: .red))
-        )
-        
-        ProductCat.sharedInstance.imageSearch(params: imgSearchParams,
-                                              successHandler: {
-                              (data : ProductSummaryResponse?) -> Void in
-                                  // Do something when request succeeds
-                                  // preview by calling : dump(data)
-                                  // check data.hasError and data.error for any errors return by ViSenze server
-                                  dump(data)
-                                                
-                                    
-                          },
-                         failureHandler: {
-                              (err) -> Void in
-                              // Do something when request fails e.g. due to network error
-                            print ("error: \(err)")
-                          })
- */
-        
-    }
-    
 }
 

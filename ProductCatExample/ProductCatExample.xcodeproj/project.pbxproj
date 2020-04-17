@@ -11,6 +11,7 @@
 		52D0A2E58B6858FE0FBF120F /* Pods_ProductCatExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74C2EFC968CBEA807DEB31D /* Pods_ProductCatExample.framework */; };
 		59AE9DD9731EF960B9041E5D /* Pods_ProductCatExample_ProductCatExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEF054DD5CFB52B6CB3AE8B /* Pods_ProductCatExample_ProductCatExampleUITests.framework */; };
 		BD4427D2244989360026252F /* CameraPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4427D1244989360026252F /* CameraPreviewViewController.swift */; };
+		BD4427D5244991E20026252F /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4427D4244991E20026252F /* SafariServices.framework */; };
 		BD73FC21244436AD00AE9D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FC20244436AD00AE9D81 /* AppDelegate.swift */; };
 		BD73FC23244436AD00AE9D81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FC22244436AD00AE9D81 /* SceneDelegate.swift */; };
 		BD73FC25244436AD00AE9D81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FC24244436AD00AE9D81 /* ViewController.swift */; };
@@ -85,6 +86,7 @@
 		A24E089501E7FD3151EE1154 /* Pods-ProductCatExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductCatExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ProductCatExampleTests/Pods-ProductCatExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A74C2EFC968CBEA807DEB31D /* Pods_ProductCatExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProductCatExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4427D1244989360026252F /* CameraPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewViewController.swift; sourceTree = "<group>"; };
+		BD4427D4244991E20026252F /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		BD73FC1D244436AC00AE9D81 /* ProductCatExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductCatExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD73FC20244436AD00AE9D81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD73FC22244436AD00AE9D81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD4427D5244991E20026252F /* SafariServices.framework in Frameworks */,
 				BDCFBD2C24448D6300367FB4 /* AdSupport.framework in Frameworks */,
 				BD73FC6324443FA500AE9D81 /* ProductCat.framework in Frameworks */,
 				52D0A2E58B6858FE0FBF120F /* Pods_ProductCatExample.framework in Frameworks */,
@@ -216,6 +219,7 @@
 		BD73FC6224443FA500AE9D81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BD4427D4244991E20026252F /* SafariServices.framework */,
 				BDCFBD2924448D6300367FB4 /* AdSupport.framework */,
 				A74C2EFC968CBEA807DEB31D /* Pods_ProductCatExample.framework */,
 				EAEF054DD5CFB52B6CB3AE8B /* Pods_ProductCatExample_ProductCatExampleUITests.framework */,
