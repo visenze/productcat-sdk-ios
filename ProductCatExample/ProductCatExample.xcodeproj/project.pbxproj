@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		49560E694E7FB30E64256739 /* Pods_ProductCatExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BC0AAEE95A78B61A01F713A /* Pods_ProductCatExampleTests.framework */; };
 		52D0A2E58B6858FE0FBF120F /* Pods_ProductCatExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74C2EFC968CBEA807DEB31D /* Pods_ProductCatExample.framework */; };
 		59AE9DD9731EF960B9041E5D /* Pods_ProductCatExample_ProductCatExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEF054DD5CFB52B6CB3AE8B /* Pods_ProductCatExample_ProductCatExampleUITests.framework */; };
+		BD4427D2244989360026252F /* CameraPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4427D1244989360026252F /* CameraPreviewViewController.swift */; };
 		BD73FC21244436AD00AE9D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FC20244436AD00AE9D81 /* AppDelegate.swift */; };
 		BD73FC23244436AD00AE9D81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FC22244436AD00AE9D81 /* SceneDelegate.swift */; };
 		BD73FC25244436AD00AE9D81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD73FC24244436AD00AE9D81 /* ViewController.swift */; };
@@ -83,6 +84,7 @@
 		9BC0AAEE95A78B61A01F713A /* Pods_ProductCatExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProductCatExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24E089501E7FD3151EE1154 /* Pods-ProductCatExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductCatExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ProductCatExampleTests/Pods-ProductCatExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A74C2EFC968CBEA807DEB31D /* Pods_ProductCatExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProductCatExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD4427D1244989360026252F /* CameraPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewViewController.swift; sourceTree = "<group>"; };
 		BD73FC1D244436AC00AE9D81 /* ProductCatExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductCatExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD73FC20244436AD00AE9D81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD73FC22244436AD00AE9D81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,7 +145,6 @@
 				A24E089501E7FD3151EE1154 /* Pods-ProductCatExampleTests.debug.xcconfig */,
 				C102E0FAB0BF7C0A402AB308 /* Pods-ProductCatExampleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -176,6 +177,7 @@
 				BD73FC20244436AD00AE9D81 /* AppDelegate.swift */,
 				BD73FC22244436AD00AE9D81 /* SceneDelegate.swift */,
 				BD73FC24244436AD00AE9D81 /* ViewController.swift */,
+				BD4427D1244989360026252F /* CameraPreviewViewController.swift */,
 				BD73FC26244436AD00AE9D81 /* Main.storyboard */,
 				BD73FC29244436AF00AE9D81 /* Assets.xcassets */,
 				BD73FC2B244436AF00AE9D81 /* LaunchScreen.storyboard */,
@@ -488,6 +490,7 @@
 			files = (
 				BD73FC25244436AD00AE9D81 /* ViewController.swift in Sources */,
 				BD73FC21244436AD00AE9D81 /* AppDelegate.swift in Sources */,
+				BD4427D2244989360026252F /* CameraPreviewViewController.swift in Sources */,
 				BD73FC23244436AD00AE9D81 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

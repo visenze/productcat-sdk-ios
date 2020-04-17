@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mx7-rG-Fg6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ProductCat SDK Demo-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProductCatExample" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,14 +16,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UT3-ni-PyD">
-                                <rect key="frame" x="166.5" y="433" width="81" height="30"/>
-                                <state key="normal" title="Test Search"/>
+                                <rect key="frame" x="149.5" y="433" width="115" height="30"/>
+                                <state key="normal" title="Search by Image"/>
                                 <connections>
                                     <action selector="testBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o9w-6E-Ji4"/>
+                                    <segue destination="ckY-Fe-Wnr" kind="show" id="tX3-39-ewp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xax-y2-1HA">
-                                <rect key="frame" x="137.5" y="493" width="139" height="30"/>
+                                <rect key="frame" x="137.5" y="477" width="139" height="30"/>
                                 <state key="normal" title="Show Consent Form"/>
                                 <connections>
                                     <action selector="showConsentForm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d4L-lp-VST"/>
@@ -35,14 +36,99 @@
                             <constraint firstItem="UT3-ni-PyD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b4P-Ji-zfD"/>
                             <constraint firstItem="Xax-y2-1HA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c9z-Wf-HiN"/>
                             <constraint firstItem="UT3-ni-PyD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iEj-Rd-Ntp"/>
-                            <constraint firstItem="Xax-y2-1HA" firstAttribute="top" secondItem="UT3-ni-PyD" secondAttribute="top" constant="60" id="tz0-Wq-m87"/>
+                            <constraint firstItem="Xax-y2-1HA" firstAttribute="top" secondItem="UT3-ni-PyD" secondAttribute="top" constant="44" id="tz0-Wq-m87"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="ProductCat SDK Demo" id="MDH-MI-hUP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="127"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
+        </scene>
+        <!--Search by Image-->
+        <scene sceneID="Sgt-TE-LmN">
+            <objects>
+                <viewController id="ckY-Fe-Wnr" customClass="CameraPreviewViewController" customModule="ProductCatExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PKC-7d-J3V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rw-go-E3n">
+                                <rect key="frame" x="107" y="128" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="BMs-uc-nMp"/>
+                                    <constraint firstAttribute="height" constant="44" id="XOh-O1-HdB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Take Photo"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="ckY-Fe-Wnr" eventType="touchUpInside" id="aIv-1i-yDl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObC-7w-XQO">
+                                <rect key="frame" x="107" y="188" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="cYp-8q-3in"/>
+                                    <constraint firstAttribute="height" constant="44" id="ukJ-Ef-kUk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Choose from Gallery"/>
+                                <connections>
+                                    <action selector="openGallery:" destination="ckY-Fe-Wnr" eventType="touchUpInside" id="ecv-AC-2uX"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uxv-BE-kqv" userLabel="imgPreview">
+                                <rect key="frame" x="32" y="272" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="OR6-nH-PQk"/>
+                                    <constraint firstAttribute="width" constant="350" id="Od5-8V-Lqx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Uxv-BE-kqv" firstAttribute="centerX" secondItem="PKC-7d-J3V" secondAttribute="centerX" id="1O2-uR-pVp"/>
+                            <constraint firstItem="ObC-7w-XQO" firstAttribute="centerX" secondItem="PKC-7d-J3V" secondAttribute="centerX" id="318-ih-ZpU"/>
+                            <constraint firstItem="1rw-go-E3n" firstAttribute="centerX" secondItem="PKC-7d-J3V" secondAttribute="centerX" id="GRX-PN-ocs"/>
+                            <constraint firstItem="Uxv-BE-kqv" firstAttribute="top" secondItem="ObC-7w-XQO" secondAttribute="bottom" constant="40" id="Weq-Zp-iA9"/>
+                            <constraint firstItem="1rw-go-E3n" firstAttribute="top" secondItem="RA4-bs-TyB" secondAttribute="top" constant="40" id="f1j-LS-Dw9"/>
+                            <constraint firstItem="ObC-7w-XQO" firstAttribute="top" secondItem="1rw-go-E3n" secondAttribute="top" constant="60" id="x6a-G6-U8m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RA4-bs-TyB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search by Image" id="Fc5-rk-7hh">
+                        <barButtonItem key="rightBarButtonItem" title="Search" id="qSt-41-Np8">
+                            <connections>
+                                <action selector="searchClicked:" destination="ckY-Fe-Wnr" id="Rx4-xF-Kt1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imgView" destination="Uxv-BE-kqv" id="CJs-MK-loL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YWO-be-0um" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1886" y="127"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LYo-wM-AVu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mx7-rG-Fg6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TzJ-EB-6Ud">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5Bd-bP-LO6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TYM-JB-aP8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
     </scenes>
 </document>

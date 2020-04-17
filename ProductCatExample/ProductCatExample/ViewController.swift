@@ -9,6 +9,7 @@
 import UIKit
 import ProductCat
 
+// Home page
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -18,12 +19,11 @@ class ViewController: UIViewController {
 
     @IBAction func showConsentForm(_ sender: Any) {
         ProductCat.sharedInstance.showConsentForm(nil)
-        
     }
     
     
     @IBAction func testBtnClick(_ sender: Any) {
-        let imgSearchParams = ImageSearchParams(
+        /*let imgSearchParams = ImageSearchParams(
             country: ProductCat.sharedInstance.client!.country ,
             image: UIImage(ciImage: CIImage(color: .red))
         )
@@ -43,6 +43,7 @@ class ViewController: UIViewController {
                               // Do something when request fails e.g. due to network error
                             print ("error: \(err)")
                           })
+ */
         
     }
     
