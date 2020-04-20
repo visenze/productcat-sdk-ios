@@ -135,10 +135,10 @@ Do you agree to proceed?</string>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNb-q0-jIG">
                                                 <rect key="frame" x="0.0" y="36" width="350" height="250"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <mutableString key="text">Welcome to visual shopping! Start to snap, search and shop with us.
+                                                <string key="text">Welcome to visual shopping! Start to snap, search and shop with us.
 
 We value your privacy and personal data. 
-We will only collect, use, disclose and/or process your personal data in accordance with our privacy policy.
+We will only collect, use, disclose and process your personal data in accordance with our privacy policy.
 
 Privacy policy
 
@@ -149,7 +149,7 @@ Terms of use
 
    
 
-</mutableString>
+</string>
                                                 <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
