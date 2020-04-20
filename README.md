@@ -33,7 +33,7 @@ This SDK is an open source software to provide easy integration of ProductCat Se
 
 ProductCat database is partitioned globally based on `country` and geographical regions. It is required that you call the Product Search APIs with `country` parameter to ensure only products that ship to the country will be returned.
 
-> Current stable version: `0.2.0` (Swift 5+)
+> Current stable version: `1.0.0` (Swift 5+)
 > 
 
 > Supported iOS version: iOS 10.x and higher
