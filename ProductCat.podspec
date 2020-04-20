@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   
   s.name         = "ProductCat"
-  s.version      = "0.2.0"
+  s.version      = "0.2.1"
   s.summary      = "ProductCat API"
 
   s.description  = <<-DESC
