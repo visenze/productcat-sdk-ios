@@ -19,8 +19,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJP-PL-g6p">
                                 <rect key="frame" x="16" y="288" width="382" height="320"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="o9A-xR-pMf">
-                                        <rect key="frame" x="16" y="40" width="350" height="240"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="o9A-xR-pMf" userLabel="containerSV">
+                                        <rect key="frame" x="16" y="24" width="350" height="272"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product recommendation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsL-9W-YGi" userLabel="welcomeLabel">
                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="20"/>
@@ -31,16 +31,9 @@
                                                 <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmm-lu-SLl">
-                                                <rect key="frame" x="0.0" y="20" width="350" height="12"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                            </view>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFo-Kq-0cc">
-                                                <rect key="frame" x="0.0" y="32" width="350" height="120"/>
+                                                <rect key="frame" x="0.0" y="34" width="350" height="124"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="120" id="guo-xl-rmY"/>
-                                                </constraints>
                                                 <string key="text">We will recommend discounts and promotional products based on your search preferences. 
 
 Do you agree to proceed?</string>
@@ -48,32 +41,40 @@ Do you agree to proceed?</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOa-LB-9qL" userLabel="acceptBtn">
-                                                <rect key="frame" x="0.0" y="152" width="350" height="44"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ufC-Hc-jbz" userLabel="btnSV">
+                                                <rect key="frame" x="0.0" y="172" width="350" height="100"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOa-LB-9qL" userLabel="acceptBtn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="ia1-yY-dLW"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <state key="normal" title="Yes, I agree">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="actionBtnClicked:" destination="chp-tL-9nW" eventType="touchUpInside" id="Mpa-wv-AnY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTj-Hq-yaC" userLabel="declineBtn">
+                                                        <rect key="frame" x="0.0" y="56" width="350" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="svK-NS-vQS"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <state key="normal" title="No">
+                                                            <color key="titleColor" red="0.15686274509803921" green="0.23921568627450979" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="declineBtnClicked:" destination="chp-tL-9nW" eventType="touchUpInside" id="dC1-qM-w22"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="44" id="ia1-yY-dLW"/>
+                                                    <constraint firstAttribute="height" constant="100" id="Wr8-us-OWf"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <state key="normal" title="Yes, I agree">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="actionBtnClicked:" destination="chp-tL-9nW" eventType="touchUpInside" id="Mpa-wv-AnY"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTj-Hq-yaC" userLabel="declineBtn">
-                                                <rect key="frame" x="0.0" y="196" width="350" height="44"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="44" id="svK-NS-vQS"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <state key="normal" title="No">
-                                                    <color key="titleColor" red="0.15686274509803921" green="0.23921568627450979" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="declineBtnClicked:" destination="chp-tL-9nW" eventType="touchUpInside" id="dC1-qM-w22"/>
-                                                </connections>
-                                            </button>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -81,10 +82,10 @@ Do you agree to proceed?</string>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="o9A-xR-pMf" firstAttribute="centerX" secondItem="uJP-PL-g6p" secondAttribute="centerX" id="1DN-4V-Ge3"/>
-                                    <constraint firstItem="o9A-xR-pMf" firstAttribute="top" secondItem="uJP-PL-g6p" secondAttribute="top" constant="40" id="5Qf-8v-78B"/>
+                                    <constraint firstItem="o9A-xR-pMf" firstAttribute="top" secondItem="uJP-PL-g6p" secondAttribute="top" constant="24" id="5Qf-8v-78B"/>
                                     <constraint firstAttribute="trailing" secondItem="o9A-xR-pMf" secondAttribute="trailing" constant="16" id="5lz-xd-bnO"/>
                                     <constraint firstItem="o9A-xR-pMf" firstAttribute="leading" secondItem="uJP-PL-g6p" secondAttribute="leading" constant="16" id="80S-KX-kst"/>
-                                    <constraint firstItem="o9A-xR-pMf" firstAttribute="centerY" secondItem="uJP-PL-g6p" secondAttribute="centerY" id="CYt-cB-3TY"/>
+                                    <constraint firstItem="o9A-xR-pMf" firstAttribute="bottom" secondItem="uJP-PL-g6p" secondAttribute="bottom" constant="-24" id="CYt-cB-3TY"/>
                                     <constraint firstAttribute="height" constant="320" id="RrX-gi-GhR"/>
                                 </constraints>
                             </view>
@@ -116,32 +117,25 @@ Do you agree to proceed?</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U7g-y3-pDn">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U7g-y3-pDn" userLabel="popupContainer">
                                 <rect key="frame" x="16" y="224" width="382" height="448"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MLb-Jz-Afp">
-                                        <rect key="frame" x="16" y="40" width="350" height="368"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="MLb-Jz-Afp" userLabel="stackView">
+                                        <rect key="frame" x="16" y="24" width="350" height="400"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYM-jG-2gj" userLabel="welcomeLabel">
-                                                <rect key="frame" x="0.0" y="0.0" width="350" height="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="22"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="20" id="fnG-JO-mCL"/>
+                                                    <constraint firstAttribute="height" constant="22" id="5xT-Y3-CnV"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ul1-CY-Sxu">
-                                                <rect key="frame" x="0.0" y="20" width="350" height="20"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                            </view>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNb-q0-jIG">
-                                                <rect key="frame" x="0.0" y="40" width="350" height="240"/>
+                                                <rect key="frame" x="0.0" y="36" width="350" height="250"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="240" id="ULY-N5-HpI"/>
-                                                </constraints>
-                                                <string key="text">Welcome to visual shopping! Start to snap, search and shop with us.
+                                                <mutableString key="text">Welcome to visual shopping! Start to snap, search and shop with us.
 
 We value your privacy and personal data. 
 We will only collect, use, disclose and/or process your personal data in accordance with our privacy policy.
@@ -155,49 +149,56 @@ Terms of use
 
    
 
-</string>
+</mutableString>
                                                 <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2k-Eh-F1r" userLabel="acceptBtn">
-                                                <rect key="frame" x="0.0" y="280" width="350" height="44"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="6fe-IC-Xxc" userLabel="btnStackView">
+                                                <rect key="frame" x="0.0" y="300" width="350" height="100"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2k-Eh-F1r" userLabel="acceptBtn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="JiB-RZ-XAJ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <state key="normal" title="Accept">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="acceptClick:" destination="x0H-eM-U1J" eventType="touchUpInside" id="vzh-EL-asS"/>
+                                                            <segue destination="chp-tL-9nW" kind="presentation" identifier="showRec" modalPresentationStyle="overCurrentContext" id="A6w-hT-sPu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFg-9u-z4b" userLabel="declineBtn">
+                                                        <rect key="frame" x="0.0" y="56" width="350" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="zNg-Pv-oyO"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <state key="normal" title="Decline">
+                                                            <color key="titleColor" red="0.15686274510000001" green="0.23921568630000001" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="declineClick:" destination="x0H-eM-U1J" eventType="touchUpInside" id="Gec-Cu-XRK"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="44" id="JiB-RZ-XAJ"/>
+                                                    <constraint firstAttribute="height" constant="100" id="DGZ-8G-V9c"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <state key="normal" title="Accept">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="acceptClick:" destination="x0H-eM-U1J" eventType="touchUpInside" id="vzh-EL-asS"/>
-                                                    <segue destination="chp-tL-9nW" kind="presentation" identifier="showRec" modalPresentationStyle="overCurrentContext" id="A6w-hT-sPu"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFg-9u-z4b" userLabel="declineBtn">
-                                                <rect key="frame" x="0.0" y="324" width="350" height="44"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="44" id="zNg-Pv-oyO"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <state key="normal" title="Decline">
-                                                    <color key="titleColor" red="0.15686274510000001" green="0.23921568630000001" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="declineClick:" destination="x0H-eM-U1J" eventType="touchUpInside" id="Gec-Cu-XRK"/>
-                                                </connections>
-                                            </button>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="MLb-Jz-Afp" firstAttribute="centerX" secondItem="U7g-y3-pDn" secondAttribute="centerX" id="Qy1-lU-Sul"/>
                                     <constraint firstAttribute="height" constant="448" id="XYG-yC-bAh"/>
                                     <constraint firstAttribute="trailing" secondItem="MLb-Jz-Afp" secondAttribute="trailing" constant="16" id="pY1-Rn-1M2"/>
-                                    <constraint firstItem="MLb-Jz-Afp" firstAttribute="centerY" secondItem="U7g-y3-pDn" secondAttribute="centerY" id="wQb-qV-f25"/>
-                                    <constraint firstItem="MLb-Jz-Afp" firstAttribute="top" secondItem="U7g-y3-pDn" secondAttribute="top" constant="40" id="zFY-PK-F4Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="MLb-Jz-Afp" secondAttribute="bottom" constant="24" id="t9O-cT-Lnt"/>
+                                    <constraint firstItem="MLb-Jz-Afp" firstAttribute="top" secondItem="U7g-y3-pDn" secondAttribute="top" constant="24" id="zFY-PK-F4Z"/>
                                     <constraint firstItem="MLb-Jz-Afp" firstAttribute="leading" secondItem="U7g-y3-pDn" secondAttribute="leading" constant="16" id="ztc-K1-yBd"/>
                                 </constraints>
                             </view>

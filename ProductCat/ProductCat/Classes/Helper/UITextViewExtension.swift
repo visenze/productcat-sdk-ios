@@ -13,6 +13,7 @@ extension UITextView {
   func addHyperLinksToText(originalText: String, hyperLinks: [String: String]) {
     let style = NSMutableParagraphStyle()
     style.alignment = .left
+    style.lineSpacing = 2.5
     let attributedOriginalText = NSMutableAttributedString(string: originalText)
     
     let linkFont = UIFont.systemFont(ofSize: 16.0)
