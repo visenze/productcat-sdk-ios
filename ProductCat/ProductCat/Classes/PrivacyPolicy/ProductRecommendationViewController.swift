@@ -52,6 +52,12 @@ open class ProductRecommendationViewController: UIViewController {
         acceptBtn.layer.cornerRadius = ProductCatThemeConstants.cornerRadius
         acceptBtn.backgroundColor = ProductCatThemeConstants.btnPrimaryColor
         
+        descTextView.addHyperLinksToText(originalText: descTextView.text!, hyperLinks: [
+            "Privacy policy" :"https://shopping.visenze.com/privacy-policy",
+            "Terms of use" : "https://shopping.visenze.com/terms-of-use"
+        ])
+        
+        
     }
     
 }
